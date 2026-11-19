@@ -46,4 +46,4 @@ Consider a circular wire of radius $R$ with $\lambda$ coulombs per meter, lying 
 $$|d\vec{F}|=\frac{q\cdot dl}{d\pi\varepsilon_0(R^2+Z^2)}.$$
 We only need to keep the vertical part, since the horizontal part will be canceled by the segment at the diametrically opposite point. The total vertical force has a magnitude given by integration:
 $$F_z=\int{dF_z}=\int{\frac{q\cdot\lambda dl}{4\pi\varepsilon_0(R^2+z^2)}\times\frac{z}{\sqrt{R^2+z^2}}}$$
-$$=\frac{q\cdot\lambda\cdot2\pi\cdot Rz}{4\pi\varepsilon_0 (R^2+z^2)^\frac{3}{2}}.
+$$=\frac{q\cdot\lambda\cdot2\pi\cdot Rz}{4\pi\varepsilon_0 (R^2+z^2)^\frac{3}{2}}.$$
