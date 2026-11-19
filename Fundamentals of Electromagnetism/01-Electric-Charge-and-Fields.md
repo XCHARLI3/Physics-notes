@@ -37,7 +37,7 @@ In the formula $\vec{F_{21}}(=-\vec{F_{12}})$ is the force on charge 2, due to c
 
 ### 1.2.2 Superposition principle
 The electrostatic force must obey the superposition principle of force. Suppose we have n charges near a chosen charge called charge 1; then the net force on charge 1 is given by the vector sum
-$$\vec{F}_{1,net}=\vec{F}_{12}+\vec{F}_{13}+\vec{F}_{14}+...+\vec{F}_{1n}.$$
+$$\vec{F_{1,net}}=\vec{F_{12}}+\vec{F_{13}}+\vec{F_{14}}+...+\vec{F_{1n}}.$$
 
 ### 1.2.3 Coulomb's law for continuous charge density
 Often, we consider problems where charges are continuous.(In real world, everything is discrete, but at macroscopic scale, the charge will be looked like continuous.) To solve the variation in such situation: we replace sums by integrals.
