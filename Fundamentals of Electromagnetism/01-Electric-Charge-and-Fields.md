@@ -44,7 +44,6 @@ Often, we consider problems where charges are continuous.(In real world, everyth
 
 Consider a circular wire of radius $R$ with $\lambda$ coulombs per meter, lying in the xy-plane with its centre at the origin. If I want to find the electric force which acts on a test point charge $q$ located at a height z on the z-axis. By dividing the loop into tiny segments of length $dl$, each segment can be treated as a point charge $\lambda dl$. It exerts a force $d\vec{F}$ of magnitude
 $$|d\vec{F}|=\frac{q\cdot \lambda dl}{4\pi\varepsilon_0(R^2+Z^2)}.$$
-$$|d\vec{F}|=\frac{q\cdot \lambda dl}{4\pi\varepsilon_0(R^2+Z^2)}.$$
 We only need to keep the vertical part, since the horizontal part will be canceled by the segment at the diametrically opposite point. The total vertical force has a magnitude given by integration:
 $$F_z=\int{dF_z}=\int{\frac{q\cdot\lambda dl}{4\pi\varepsilon_0(R^2+z^2)}\times\frac{z}{\sqrt{R^2+z^2}}}$$
 $$=\frac{q\cdot\lambda\cdot2\pi\cdot Rz}{4\pi\varepsilon_0 (R^2+z^2)^\frac{3}{2}}.$$
