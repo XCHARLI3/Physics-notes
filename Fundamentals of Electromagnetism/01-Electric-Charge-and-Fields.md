@@ -30,20 +30,33 @@ The hypothesis of conservation of charge, first put forward by Benjamin Franklin
 Now we shall learn about a quantitative description of charges : *Coulomb's Law*. (*Charles-Augustin de Coulomb*'s experiments in 1785 led him to it.) 
 
 Coulomb's Law says the force between two charges $q_1$ and $q_2$, located at points $\vec{r_1}$ and $\vec{r_2}$, is 
-$$ \vec{F_{21}}=-\vec{F_{12}}= \frac{q_1 q_2}{4 \pi \varepsilon_0 {r_{12}}^2} \vec{e_{12}} $$
+
+$$ 
+\vec{F_{21}}=-\vec{F_{12}}= \frac{q_1 q_2}{4 \pi \varepsilon_0 {r_{12}}^2} \vec{e_{12}} 
+$$
+
 where $r_{12}= |{\vec{r_2}-\vec{r_1}}|$ and $\vec{e_{12}}=\frac{\vec{r_2}-\vec{r_1}}{|{\vec{r_2}-\vec{r_1}}|}$ is a unit vector from $r_1$ to $r_2$.
 
 In the formula $\vec{F_{21}}(=-\vec{F_{12}})$ is the force on charge 2, due to charge 1.
 
 ### 1.2.2 Superposition principle
 The electrostatic force must obey the superposition principle of force. Suppose we have n charges near a chosen charge called charge 1; then the net force on charge 1 is given by the vector sum
-$$\vec{F_{1,net}}=\vec{F_{12}}+\vec{F_{13}}+\vec{F_{14}}+...+\vec{F_{1n}}.$$
+
+$$
+\vec{F_{1,net}}=\vec{F_{12}}+\vec{F_{13}}+\vec{F_{14}}+...+\vec{F_{1n}}.
+$$
 
 ### 1.2.3 Coulomb's law for continuous charge density
 Often, we consider problems where charges are continuous.(In real world, everything is discrete, but at macroscopic scale, the charge will be looked like continuous.) To solve the variation in such situation: we replace sums by integrals.
 
 Consider a circular wire of radius $R$ with $\lambda$ coulombs per meter, lying in the xy-plane with its centre at the origin. If I want to find the electric force which acts on a test point charge $q$ located at a height z on the z-axis. By dividing the loop into tiny segments of length $dl$, each segment can be treated as a point charge $\lambda dl$. It exerts a force $d\vec{F}$ of magnitude
-$$|d\vec{F}|=\frac{q\cdot \lambda dl}{4\pi\varepsilon_0(R^2+Z^2)}.$$
+
+$$
+|d\vec{F}|=\frac{q\cdot \lambda dl}{4\pi\varepsilon_0(R^2+Z^2)}.
+$$
+
 We only need to keep the vertical part, since the horizontal part will be canceled by the segment at the diametrically opposite point. The total vertical force has a magnitude given by integration:
-$$F_z=\int{dF_z}=\int{\frac{q\cdot\lambda dl}{4\pi\varepsilon_0(R^2+z^2)}\times\frac{z}{\sqrt{R^2+z^2}}}$$
-$$=\frac{q\cdot\lambda\cdot2\pi\cdot Rz}{4\pi\varepsilon_0 (R^2+z^2)^\frac{3}{2}}.$$
+
+$$
+F_z=\int{dF_z}=\int{\frac{q\cdot\lambda dl}{4\pi\varepsilon_0(R^2+z^2)}\times\frac{z}{\sqrt{R^2+z^2}}}
+=\frac{q\cdot\lambda\cdot2\pi\cdot Rz}{4\pi\varepsilon_0 (R^2+z^2)^{3/2}}.$$
