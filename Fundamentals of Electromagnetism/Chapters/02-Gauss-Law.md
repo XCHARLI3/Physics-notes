@@ -57,7 +57,7 @@ E(r)(4\pi r^2)=\frac{Q_{\rm enc}(r)}{\varepsilon_0}\quad\Rightarrow\quad\boxed{\
 For a uniformly charged solid sphere with total charge $Q$ (coulombs) and radius $R$ (metres), $Q_{\rm enc}(r)=Q(r/R)^3$ for $r<R$:
 
 ```math
-\mathbf E(r)=\begin{cases}\dfrac{Qr}{4\pi\varepsilon_0R^3}\hat{\mathbf r},&r<R,\\[4pt]\dfrac{Q}{4\pi\varepsilon_0r^2}\hat{\mathbf r},&r\ge R.\end{cases}
+\mathbf E(r)=\begin{cases}\dfrac{Qr}{4\pi\varepsilon_0R^3}\hat{\mathbf r},&r\lt R,\\[4pt]\dfrac{Q}{4\pi\varepsilon_0r^2}\hat{\mathbf r},&r\ge R.\end{cases}
 ```
 
 An infinite line with linear charge density $\lambda$ ($\mathrm{C/m}$) has cylindrical symmetry. A coaxial cylinder of radius $r$ and length $L$ has no flux through its ends, hence
