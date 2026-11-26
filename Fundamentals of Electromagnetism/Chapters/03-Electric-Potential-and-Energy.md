@@ -95,7 +95,7 @@ where $Q=\int\rho\,dV$ and $\mathbf p=\int\mathbf r'\rho(\mathbf r')\,dV'$. If $
 Imagine assembling fixed charges by bringing them from infinity, one at a time. The first requires no interaction work, the second works against the first, the third against the first two, and so on. Each pair is counted exactly once:
 
 ```math
-\boxed{U_{\rm int}=\frac1{4\pi\varepsilon_0}\sum_{i<j}\frac{q_iq_j}{r_{ij}}}.
+\boxed{U_{\rm int}=\frac1{4\pi\varepsilon_0}\sum_{i\lt j}\frac{q_iq_j}{r_{ij}}}.
 ```
 
 The value can be positive or negative because charges of opposite signs lower the interaction energy. It does not include the infinite self-energy that results if ideal point charges are treated as fields extending all the way to $r=0$.
