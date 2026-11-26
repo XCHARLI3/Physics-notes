@@ -6,11 +6,15 @@ In a conductor, some charges are free to rearrange. Their movement changes the f
 
 If a static electric field persisted inside a conducting material, mobile carriers would continue to move. At equilibrium their redistribution has cancelled the field in the bulk:
 
-$$\boxed{\mathbf E_{\rm metal}=0}\quad\Rightarrow\quad\nabla\phi=0\quad\Rightarrow\quad\boxed{\phi=\text{constant on each connected conductor}}.$$
+$$
+\boxed{\mathbf E_{\rm metal}=0}\quad\Rightarrow\quad\nabla\phi=0\quad\Rightarrow\quad\boxed{\phi=\text{constant on each connected conductor}}.
+$$
 
 Gauss's law then gives $\rho_{\rm bulk}=0$ for *excess* electrostatic charge in the metal; the material still contains microscopic positive and negative charges. Excess charge resides on its surfaces. The surface charge density $\sigma$ is measured in $\mathrm{C/m^2}$. At a surface the tangential field must vanish, otherwise charges would move along it. Just outside a conductor in vacuum, (by constructing a very thin Gaussian pillbox on the conductor's surface)
 
-$$\varepsilon_0(E_{n,\rm out}-E_{n,\rm in})=\sigma\quad\Rightarrow\quad\boxed{\mathbf E_{\rm out}=\frac\sigma{\varepsilon_0}\hat{\mathbf n}}.$$
+$$
+\varepsilon_0(E_{n,\rm out}-E_{n,\rm in})=\sigma\quad\Rightarrow\quad\boxed{\mathbf E_{\rm out}=\frac\sigma{\varepsilon_0}\hat{\mathbf n}}.
+$$
 
 This is the local field at the surface of a conductor, not the field of an isolated nonconducting infinite sheet ($\sigma/2\varepsilon_0$ on each side).
 
@@ -26,7 +30,9 @@ Poisson's equation by itself is not enough; multiple solutions can differ by a s
 
 Use the identity $\nabla\cdot(u\nabla u)=|\nabla u|^2+u\nabla^2u$ and integrate:
 
-$$\int_V|\nabla u|^2dV=\oint_{\partial V}u\nabla u\cdot d\mathbf S-\int_Vu\nabla^2u\,dV=0.$$
+$$
+\int_V|\nabla u|^2dV=\oint_{\partial V}u\nabla u\cdot d\mathbf S-\int_Vu\nabla^2u\,dV=0.
+$$
 
 The nonnegative integrand must vanish, so $\nabla u=0$ everywhere in a connected region. The boundary condition sets the remaining constant to zero: $\phi_1=\phi_2$. This **uniqueness theorem** explains why any mathematical construction satisfying both the equation and the required boundary potentials gives the physical answer.
 
@@ -34,23 +40,31 @@ The nonnegative integrand must vanish, so $\nabla u=0$ everywhere in a connected
 
 Place a point charge $q$ at $(0,0,a)$ above an infinite grounded conductor occupying $z\le0$. The unknown induced surface charge makes direct integration awkward. Replace the conductor *mathematically*, in the physical region $z>0$ only, with a fictitious image charge $-q$ at $(0,0,-a)$:
 
-$$\phi(x,y,z)=\frac q{4\pi\varepsilon_0}\left(\frac1{\sqrt{x^2+y^2+(z-a)^2}}-\frac1{\sqrt{x^2+y^2+(z+a)^2}}\right).$$
+$$
+\phi(x,y,z)=\frac q{4\pi\varepsilon_0}\left(\frac1{\sqrt{x^2+y^2+(z-a)^2}}-\frac1{\sqrt{x^2+y^2+(z+a)^2}}\right).
+$$
 
 This expression obeys Poisson's equation for the real charge in $z>0$ and gives $\phi=0$ on the plane. By uniqueness, the resulting field above the conductor is correct. The image charge does not physically exist, and the formula is *not* the field inside the actual conducting material.
 
 The surface charge follows from the normal electric field just outside it:
 
-$$\sigma(x,y)=\varepsilon_0E_z(0^+)=-\frac{qa}{2\pi(x^2+y^2+a^2)^{3/2}},\qquad\int\sigma\,dS=-q.$$
+$$
+\sigma(x,y)=\varepsilon_0E_z(0^+)=-\frac{qa}{2\pi(x^2+y^2+a^2)^{3/2}},\qquad\int\sigma\,dS=-q.
+$$
 
 ## 4.5 Capacitance from potential difference
 
 Two conductors with charges $+Q$ and $-Q$ (coulombs, $\mathrm C$) generally have a potential difference $\Delta V$ (volts, $\mathrm V$). In a linear dielectric or vacuum the electric field and potential scale with $Q$, so their ratio is a geometric/material property:
 
-$$\boxed{C=\frac{Q}{\Delta V}}\qquad[C]=\mathrm F=\mathrm{C/V}.$$
+$$
+\boxed{C=\frac{Q}{\Delta V}}\qquad[C]=\mathrm F=\mathrm{C/V}.
+$$
 
 For parallel plates of area $A$ ($\mathrm{m^2}$) separated by distance $d$ ($\mathrm m$), neglect edge fields. The field between them is approximately $E=Q/(\varepsilon_0A)$ and $\Delta V=Ed$; therefore
 
-$$\boxed{C_{\rm plates}\simeq\frac{\varepsilon_0A}{d}}.$$
+$$
+\boxed{C_{\rm plates}\simeq\frac{\varepsilon_0A}{d}}.
+$$
 
 ![Ideal parallel-plate capacitor](../figures/04-parallel-plate-capacitor.svg)
 
@@ -59,13 +73,19 @@ $$\boxed{C_{\rm plates}\simeq\frac{\varepsilon_0A}{d}}.$$
 
 For concentric spherical conducting shells with radii $a<b$ (metres), apply Gauss's law between them and integrate $E\,dr$ ($a<r<b$):
 
-$$ E(\mathbf r) \cdot 4\pi r^2 = \frac{Q}{\varepsilon_0} \quad\Rightarrow\quad\ E(\mathbf r)=\frac{Q}{4\pi\varepsilon_0r^2}$$
+$$
+E(\mathbf r) \cdot 4\pi r^2 = \frac{Q}{\varepsilon_0} \quad\Rightarrow\quad\ E(\mathbf r)=\frac{Q}{4\pi\varepsilon_0r^2}
+$$
 
-$$\Delta V=\int_{a}^{b}E(\mathbf r) d\mathbf r=\frac Q{4\pi\varepsilon_0}\left(\frac1a-\frac1b\right)\quad\Rightarrow\quad\boxed{C_{\rm spheres}=\frac{Q}{\Delta V}=4\pi\varepsilon_0\frac{ab}{b-a}}.$$
+$$
+\Delta V=\int_{a}^{b}E(\mathbf r) d\mathbf r=\frac Q{4\pi\varepsilon_0}\left(\frac1a-\frac1b\right)\quad\Rightarrow\quad\boxed{C_{\rm spheres}=\frac{Q}{\Delta V}=4\pi\varepsilon_0\frac{ab}{b-a}}.
+$$
 
 For long coaxial cylinders with radii $a<b$ and length $L$ (metres), neglect ends:
 
-$$E(r)=\frac{Q}{2\pi\varepsilon_0Lr},\qquad \Delta V=\int_{a}^{b}E(\mathbf r) d\mathbf r=\frac Q{2\pi\varepsilon_0L}\ln\frac ba,\qquad\boxed{C_{\rm coax}=\frac{Q}{\Delta V}=\frac{2\pi\varepsilon_0L}{\ln(b/a)}}.$$
+$$
+E(r)=\frac{Q}{2\pi\varepsilon_0Lr},\qquad \Delta V=\int_{a}^{b}E(\mathbf r) d\mathbf r=\frac Q{2\pi\varepsilon_0L}\ln\frac ba,\qquad\boxed{C_{\rm coax}=\frac{Q}{\Delta V}=\frac{2\pi\varepsilon_0L}{\ln(b/a)}}.
+$$
 
 All three are consequences of the same definition; only the field geometry changes.
 
@@ -73,13 +93,17 @@ All three are consequences of the same definition; only the field geometry chang
 
 For capacitors in parallel, both plates of each element share the same two potentials. Their charges add while $\Delta V$ is common, hence $C_{\rm eq}=\sum_iC_i$. In series, isolated intermediate nodes carry equal and opposite charges: each element stores the same magnitude $Q$, but the voltage differences add, hence
 
-$$\boxed{C_{\rm parallel}=\sum_i C_i},\qquad\boxed{\frac1{C_{\rm series}}=\sum_i\frac1{C_i}}.$$
+$$
+\boxed{C_{\rm parallel}=\sum_i C_i},\qquad\boxed{\frac1{C_{\rm series}}=\sum_i\frac1{C_i}}.
+$$
 
 ## 4.7 Work required to charge a capacitor
 
 When a capacitor already holds charge $q$, its voltage is $V(q)=q/C$. Adding a further charge $dq$ requires work $dW=V(q)\,dq$. For constant $C$,
 
-$$U=\int_0^Q\frac qC\,dq=\boxed{\frac{Q^2}{2C}=\frac12Q\Delta V=\frac12C(\Delta V)^2}.$$
+$$
+U=\int_0^Q\frac qC\,dq=\boxed{\frac{Q^2}{2C}=\frac12Q\Delta V=\frac12C(\Delta V)^2}.
+$$
 
 
 For parallel plates of area $A$ and separation $d$, Gauss's law gives $E=Q/(\varepsilon_0A)$ and $C=\varepsilon_0A/d$. Substituting into the stored energy,

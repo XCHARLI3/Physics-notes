@@ -10,14 +10,18 @@ Consider a particle of mass $m_e$ and charge $q$ moving
 with speed $v$ in a circular orbit of radius $r$. Its 
 motion carries orbital angular momentum
 
-$$\mathbf L=m_evr\hat{\mathbf n},$$
+$$
+\mathbf L=m_evr\hat{\mathbf n},
+$$
 
 where $\hat{\mathbf n}$ is the normal to the orbital plane 
 given by the right-hand rule. Since the charge passes 
 through a fixed point once every period $T=2\pi r/v$, 
 its motion is equivalent to an average circulating current
 
-$$I=\frac{q}{T}=\frac{qv}{2\pi r}.$$
+$$
+I=\frac{q}{T}=\frac{qv}{2\pi r}.
+$$
 
 The corresponding magnetic dipole moment is
 
@@ -29,7 +33,9 @@ $$
 
 Comparing this with $\mathbf L$ gives
 
-$$\boxed{\mathbf m=\frac{q}{2m_e}\mathbf L}.$$
+$$
+\boxed{\mathbf m=\frac{q}{2m_e}\mathbf L}.
+$$
 
 For an electron, $q=-e$, so
 
@@ -69,7 +75,9 @@ can exist independently of orbital motion.
 The natural scale of an electron's magnetic moment is 
 the Bohr magneton,
 
-$$\boxed{\mu_B=\frac{e\hbar}{2m_e}},$$
+$$
+\boxed{\mu_B=\frac{e\hbar}{2m_e}},
+$$
 
 where $\hbar$ is the reduced Planck constant and 
 $\mu_B$ has units $\mathrm{J/T}$ (equivalently 
@@ -92,7 +100,9 @@ the electron's internal structure.
 In a uniform external magnetic field, a current loop 
 experiences magnetic forces on its different segments,
 
-$$d\mathbf F=I\,d\mathbf l\times\mathbf B.$$
+$$
+d\mathbf F=I\,d\mathbf l\times\mathbf B.
+$$
 
 Although the net force vanishes, these forces act at 
 different positions and can produce a net torque 
@@ -123,8 +133,10 @@ Lorentz forces. Instead, the magnetic field couples
 directly to its intrinsic magnetic moment through 
 the quantum interaction Hamiltonian
 
-$$\hat H_{\rm int}=-\hat{\mathbf m}_{\rm spin}
-\cdot\mathbf B.$$
+$$
+\hat H_{\rm int}=-\hat{\mathbf m}_{\rm spin}
+\cdot\mathbf B.
+$$
 
 The resulting evolution of the spin expectation value is
 
@@ -173,7 +185,9 @@ Writing the number density as $n=N/\Delta V$ and the
 average microscopic moment as 
 $\langle\mathbf m\rangle=\frac1N\sum_i\mathbf m_i$, we obtain
 
-$$\boxed{\mathbf M=n\langle\mathbf m\rangle}.$$
+$$
+\boxed{\mathbf M=n\langle\mathbf m\rangle}.
+$$
 
 For identical, fully aligned moments, 
 $\mathbf M=n\mathbf m$. Random or opposing orientations 
@@ -185,7 +199,9 @@ direction of a material's net magnetic dipole density,
 rather than the magnetic field itself. The total magnetic 
 dipole moment of a material is
 
-$$\mathbf m_{\rm total}=\int_V\mathbf M(\mathbf r)\,dV.$$
+$$
+\mathbf m_{\rm total}=\int_V\mathbf M(\mathbf r)\,dV.
+$$
 
 Since microscopic magnetic moments can be represented 
 by equivalent current loops, their collective magnetic 
@@ -219,7 +235,9 @@ Consider a uniformly magnetised cube of side length $a$,
 with magnetisation along the $z$-direction. Divide the cube 
 into $N$ layers of thickness
 
-$$\Delta z=\frac{a}{N}.$$
+$$
+\Delta z=\frac{a}{N}.
+$$
 
 After cancellation of neighbouring loops within each layer, 
 each layer can be represented by an equivalent current loop 
@@ -227,7 +245,9 @@ of area $a^2$, carrying current $I_0$.
 
 The total magnetic dipole moment is therefore
 
-$$\sum_i\mathbf m_i=NI_0a^2\hat{\mathbf z}.$$
+$$
+\sum_i\mathbf m_i=NI_0a^2\hat{\mathbf z}.
+$$
 
 Dividing by the volume gives
 
@@ -240,7 +260,9 @@ $$
 
 Thus,
 
-$$\boxed{M=\frac{I_0}{\Delta z}}.$$
+$$
+\boxed{M=\frac{I_0}{\Delta z}}.
+$$
 
 The area of the current loop cancels with the corresponding 
 cross-sectional area in the volume, leaving a length 
@@ -254,7 +276,9 @@ uniformly magnetised continuous medium.
 
 In the continuum limit, keeping $M$ fixed gives
 
-$$dI=M\,dz.$$
+$$
+dI=M\,dz.
+$$
 
 Now consider a side surface of the cube. All $N$ layers 
 contribute current across a line of length $a$ perpendicular 
@@ -275,11 +299,15 @@ $\hat{\mathbf n}$, as determined by the right-hand rule.
 
 Hence,
 
-$$\boxed{\mathbf K_b=\mathbf M\times\hat{\mathbf n}},$$
+$$
+\boxed{\mathbf K_b=\mathbf M\times\hat{\mathbf n}},
+$$
 
 with magnitude
 
-$$K_b=M\sin\theta,$$
+$$
+K_b=M\sin\theta,
+$$
 
 where $\theta$ is the angle between $\mathbf M$ and 
 $\hat{\mathbf n}$.
@@ -305,7 +333,9 @@ strengths.
 
 Consider a non-uniform magnetisation
 
-$$\mathbf M=M_z(x)\hat{\mathbf z}.$$
+$$
+\mathbf M=M_z(x)\hat{\mathbf z}.
+$$
 
 Take two adjacent rectangular cells of dimensions 
 $\Delta x$, $\Delta y$ and $\Delta z$, centred at $x$ 
@@ -363,7 +393,9 @@ $$
 
 Taking the continuum limit,
 
-$$\boxed{J_{b,y}=-\frac{\partial M_z}{\partial x}}.$$
+$$
+\boxed{J_{b,y}=-\frac{\partial M_z}{\partial x}}.
+$$
 
 The negative sign follows directly from the opposing 
 directions of the neighbouring currents: if $M_z$ 
@@ -409,7 +441,9 @@ $$
 These are precisely the components of the curl of 
 $\mathbf M$. Therefore,
 
-$$\boxed{\mathbf J_b=\nabla\times\mathbf M}.$$
+$$
+\boxed{\mathbf J_b=\nabla\times\mathbf M}.
+$$
 
 ### Physical interpretation of bound currents
 
@@ -419,7 +453,9 @@ but may have nonzero $\mathbf K_b$ at its surface.
 However, non-uniform magnetisation does not necessarily 
 produce a nonzero volume current. For example,
 
-$$\mathbf M=M_z(z)\hat{\mathbf z}$$
+$$
+\mathbf M=M_z(z)\hat{\mathbf z}
+$$
 
 has zero curl even though its magnitude varies with 
 position. In this case, the strengths of the loops vary 
@@ -467,7 +503,9 @@ physical origin.
 In magnetostatics, the total macroscopic current density 
 can be separated into free and bound contributions:
 
-$$\mathbf J=\mathbf J_f+\mathbf J_b.$$
+$$
+\mathbf J=\mathbf J_f+\mathbf J_b.
+$$
 
 Free current $\mathbf J_f$ describes current not included 
 in the magnetisation, such as conduction current supplied 
@@ -513,8 +551,10 @@ $$
 
 Ampère's law then becomes
 
-$$\boxed{\nabla\times\mathbf H=\mathbf J_f}
-\qquad\text{(magnetostatics)}.$$
+$$
+\boxed{\nabla\times\mathbf H=\mathbf J_f}
+\qquad\text{(magnetostatics)}.
+$$
 
 Applying Stokes' theorem gives the corresponding integral 
 form,
@@ -530,14 +570,18 @@ of bound currents are incorporated into the magnetisation.
 
 Rearranging the definition gives
 
-$$\boxed{\mathbf B=\mu_0(\mathbf H+\mathbf M)}.$$
+$$
+\boxed{\mathbf B=\mu_0(\mathbf H+\mathbf M)}.
+$$
 
 However, $\mathbf H$ should not generally be interpreted 
 as the magnetic field produced by free currents alone.
 
 Since
 
-$$\nabla\cdot\mathbf B=0,$$
+$$
+\nabla\cdot\mathbf B=0,
+$$
 
 we have
 
@@ -547,7 +591,9 @@ $$
 
 and therefore
 
-$$\boxed{\nabla\cdot\mathbf H=-\nabla\cdot\mathbf M}.$$
+$$
+\boxed{\nabla\cdot\mathbf H=-\nabla\cdot\mathbf M}.
+$$
 
 Although the curl of $\mathbf H$ is determined by free 
 currents, its divergence and boundary conditions are still 
@@ -573,7 +619,9 @@ in Gauss' law.
 
 The definition
 
-$$\mathbf B=\mu_0(\mathbf H+\mathbf M)$$
+$$
+\mathbf B=\mu_0(\mathbf H+\mathbf M)
+$$
 
 does not specify how the microscopic magnetic moments 
 respond to a magnetic field, or how much magnetisation 
@@ -617,7 +665,9 @@ $$
 
 For a linear, isotropic medium, the vector form is
 
-$$\boxed{\mathbf M=\chi_m\mathbf H}.$$
+$$
+\boxed{\mathbf M=\chi_m\mathbf H}.
+$$
 
 The susceptibility $\chi_m$ is dimensionless and measures 
 the strength and sign of the material's magnetic response.
@@ -646,16 +696,22 @@ $$
 
 Define the magnetic permeability
 
-$$\boxed{\mu=\mu_0(1+\chi_m)},$$
+$$
+\boxed{\mu=\mu_0(1+\chi_m)},
+$$
 
 where $\mu$ has units $\mathrm{H/m}$. The constitutive 
 relation becomes
 
-$$\boxed{\mathbf B=\mu\mathbf H}.$$
+$$
+\boxed{\mathbf B=\mu\mathbf H}.
+$$
 
 The relative permeability is
 
-$$\boxed{\mu_r=\frac{\mu}{\mu_0}=1+\chi_m}.$$
+$$
+\boxed{\mu_r=\frac{\mu}{\mu_0}=1+\chi_m}.
+$$
 
 For a given $\mathbf H$, permeability determines the 
 resulting magnetic flux density in a linear, isotropic 
@@ -663,11 +719,15 @@ medium.
 
 It is important to distinguish the general definition
 
-$$\mathbf B=\mu_0(\mathbf H+\mathbf M)$$
+$$
+\mathbf B=\mu_0(\mathbf H+\mathbf M)
+$$
 
 from the particular constitutive approximation
 
-$$\mathbf B=\mu\mathbf H.$$
+$$
+\mathbf B=\mu\mathbf H.
+$$
 
 The former is a general relationship between the three 
 macroscopic fields, while the latter depends on the 
@@ -688,7 +748,9 @@ Consider an initial uniform magnetic field $\mathbf B_0$
 in vacuum. In the absence of magnetic material, $\mathbf M=0$, 
 and therefore
 
-$$\mathbf H_0=\frac{\mathbf B_0}{\mu_0}.$$
+$$
+\mathbf H_0=\frac{\mathbf B_0}{\mu_0}.
+$$
 
 When a magnetic material is introduced, the external field 
 interacts with its microscopic magnetic moments.
@@ -731,7 +793,9 @@ The external field can affect microscopic magnetic moments
 through two different mechanisms. Using the equivalent 
 current-loop expression
 
-$$\mathbf m=IA\hat{\mathbf n},$$
+$$
+\mathbf m=IA\hat{\mathbf n},
+$$
 
 we can illustrate these mechanisms through
 
@@ -777,14 +841,18 @@ $$
 which produce an additional magnetic field $\mathbf B_m$. 
 By superposition, the resulting magnetic field is
 
-$$\boxed{\mathbf B'=\mathbf B_0+\mathbf B_m}.$$
+$$
+\boxed{\mathbf B'=\mathbf B_0+\mathbf B_m}.
+$$
 
 Consider an ideal infinitely long cylinder uniformly 
 magnetised along its axis. Its bound surface current 
 density is $K_b=M$, making it equivalent to an infinitely 
 long solenoid. Hence, inside the cylinder,
 
-$$\mathbf B_m=\mu_0\mathbf M.$$
+$$
+\mathbf B_m=\mu_0\mathbf M.
+$$
 
 The resulting magnetic field is therefore
 
@@ -799,7 +867,9 @@ $$
 
 In this particular geometry,
 
-$$\mathbf H=\mathbf H_0=\frac{\mathbf B_0}{\mu_0}.$$
+$$
+\mathbf H=\mathbf H_0=\frac{\mathbf B_0}{\mu_0}.
+$$
 
 The physical interpretation is straightforward: $\mathbf H$ 
 represents the applied magnetic excitation, $\mathbf M$ 
@@ -855,7 +925,9 @@ $$
 
 For a linear, isotropic medium, the vector form becomes
 
-$$\boxed{\mathbf M=\chi_m\mathbf H}.$$
+$$
+\boxed{\mathbf M=\chi_m\mathbf H}.
+$$
 
 The dimensionless susceptibility $\chi_m$ measures the 
 strength and sign of the material's magnetic response, 
@@ -865,7 +937,9 @@ magnetisation mechanisms.
 If both paramagnetic and diamagnetic contributions are 
 present and can be treated additively,
 
-$$\chi_m=\chi_{\mathrm{para}}+\chi_{\mathrm{dia}},$$
+$$
+\chi_m=\chi_{\mathrm{para}}+\chi_{\mathrm{dia}},
+$$
 
 where $\chi_{\mathrm{para}}>0$ and $\chi_{\mathrm{dia}}<0$.
 
@@ -893,21 +967,29 @@ $$
 
 Define the **magnetic permeability**
 
-$$\boxed{\mu=\mu_0(1+\chi_m)},$$
+$$
+\boxed{\mu=\mu_0(1+\chi_m)},
+$$
 
 where $\mu$ has units $\mathrm{H/m}$. The constitutive 
 relation becomes
 
-$$\boxed{\mathbf B'=\mu\mathbf H}.$$
+$$
+\boxed{\mathbf B'=\mu\mathbf H}.
+$$
 
 The relative permeability is
 
-$$\boxed{\mu_r=\frac{\mu}{\mu_0}=1+\chi_m}.$$
+$$
+\boxed{\mu_r=\frac{\mu}{\mu_0}=1+\chi_m}.
+$$
 
 Returning to the ideal geometry, where 
 $\mathbf B_0=\mu_0\mathbf H$, we obtain
 
-$$\mathbf B'=(1+\chi_m)\mathbf B_0.$$
+$$
+\mathbf B'=(1+\chi_m)\mathbf B_0.
+$$
 
 Hence,
 
@@ -928,12 +1010,16 @@ resulting field to the original applied field.
 For a material of arbitrary geometry, its magnetisation 
 may also produce a demagnetising field $\mathbf H_d$, so
 
-$$\mathbf H=\frac{\mathbf B_0}{\mu_0}+\mathbf H_d.$$
+$$
+\mathbf H=\frac{\mathbf B_0}{\mu_0}+\mathbf H_d.
+$$
 
 Consequently, $\mathbf B_m$ is not generally equal to 
 $\mu_0\mathbf M$. The definition
 
-$$\boxed{\mathbf B'=\mu_0(\mathbf H+\mathbf M)}$$
+$$
+\boxed{\mathbf B'=\mu_0(\mathbf H+\mathbf M)}
+$$
 
 remains valid, but the interpretation of $\mu_r$ as 
 $B'/B_0$ requires negligible demagnetising effects.
@@ -953,7 +1039,9 @@ by a single constant permeability.
 
 For a simple classical gas of **noninteracting** permanent moments of magnitude $m$ ($\mathrm{A\,m^2}$), the thermal weight is proportional to $e^{mB\cos\theta/(k_BT)}$. In the weak-field limit $mB\ll k_BT$, expanding the exponential and averaging over directions gives
 
-$$\langle m_\parallel\rangle\simeq\frac{m^2B}{3k_BT},\qquad M\simeq\frac{nm^2B}{3k_BT}.$$
+$$
+\langle m_\parallel\rangle\simeq\frac{m^2B}{3k_BT},\qquad M\simeq\frac{nm^2B}{3k_BT}.
+$$
 
 Here $k_B$ is Boltzmann's constant ($\mathrm{J/K}$), $T$ is absolute temperature (kelvin, $\mathrm K$), and the weak-field moment $mB$ is much smaller than the thermal energy $k_BT$. For weak susceptibility $B\simeq\mu_0H$, hence $\chi_m\simeq\mu_0nm^2/(3k_BT)$: the **classical Curie-law limit**. Quantum spins and interacting moments require other models.
 
@@ -972,7 +1060,9 @@ magnetic fields obey different boundary conditions.
 
 From Gauss' law for magnetism,
 
-$$\oint_S\mathbf B\cdot d\mathbf S=0.$$
+$$
+\oint_S\mathbf B\cdot d\mathbf S=0.
+$$
 
 Choose a thin Gaussian pillbox across the interface, with 
 its two flat faces of area $A$ parallel to the interface. 
@@ -1005,7 +1095,9 @@ in classical electromagnetism.
 
 From Ampère's law in magnetostatics,
 
-$$\oint_C\mathbf H\cdot d\mathbf l=I_{f,\mathrm{enc}}.$$
+$$
+\oint_C\mathbf H\cdot d\mathbf l=I_{f,\mathrm{enc}}.
+$$
 
 Choose a narrow rectangular loop across the interface, 
 with its two long sides of length $l$ parallel to the 
@@ -1096,7 +1188,9 @@ permeability changes.
 If $\theta$ is the angle between $\mathbf B$ and the 
 interface normal, then
 
-$$\tan\theta=\frac{B_\parallel}{B_\perp},$$
+$$
+\tan\theta=\frac{B_\parallel}{B_\perp},
+$$
 
 giving
 
@@ -1125,12 +1219,16 @@ a later chapter.
 For a solenoid of $N$ turns, length $l$ and cross-sectional 
 area $A$, the magnetic flux through each turn is
 
-$$\Phi_B=BA.$$
+$$
+\Phi_B=BA.
+$$
 
 Neglecting resistance and other losses, the voltage required 
 to overcome the induced electromotive force is
 
-$$V_{\mathrm{supply}}=NA\frac{dB}{dt}.$$
+$$
+V_{\mathrm{supply}}=NA\frac{dB}{dt}.
+$$
 
 The incremental work supplied is therefore
 
@@ -1144,21 +1242,29 @@ $$
 
 Using Ampère's law for a long solenoid,
 
-$$H=\frac{NI}{l},$$
+$$
+H=\frac{NI}{l},
+$$
 
 we obtain
 
-$$dW=HAl\,dB.$$
+$$
+dW=HAl\,dB.
+$$
 
 Since $Al$ is the volume occupied by the field, the work 
 supplied per unit volume is
 
-$$du=\frac{dW}{Al}=H\,dB.$$
+$$
+du=\frac{dW}{Al}=H\,dB.
+$$
 
 More generally, for reversible quasistatic changes with 
 appropriate material energy bookkeeping,
 
-$$\boxed{du=\mathbf H\cdot d\mathbf B}.$$
+$$
+\boxed{du=\mathbf H\cdot d\mathbf B}.
+$$
 
 For a linear, lossless, nondispersive and isotropic medium 
 with constant permeability $\mu$, starting from zero field,
@@ -1188,12 +1294,16 @@ value throughout the process.
 
 In vacuum, $\mu=\mu_0$, giving
 
-$$\boxed{u_B=\frac{B^2}{2\mu_0}}.$$
+$$
+\boxed{u_B=\frac{B^2}{2\mu_0}}.
+$$
 
 The total magnetic energy is obtained by integrating the 
 energy density over the relevant volume:
 
-$$U_B=\int_V u_B\,dV.$$
+$$
+U_B=\int_V u_B\,dV.
+$$
 
 Note that increasing permeability increases the energy 
 density at fixed $H$, but decreases it at fixed $B$. 
@@ -1209,7 +1319,9 @@ demagnetisation processes follow different paths. The
 energy dissipated per unit volume during a complete 
 cycle is the area enclosed by the $B$-$H$ loop:
 
-$$w_{\mathrm{loss}}=\left|\oint H\,dB\right|.$$
+$$
+w_{\mathrm{loss}}=\left|\oint H\,dB\right|.
+$$
 
 Therefore, the simple expression $u_B=\frac12\mathbf B
 \cdot\mathbf H$ should not be applied blindly to permanent 

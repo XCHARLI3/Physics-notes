@@ -6,7 +6,9 @@ Until now, charge distributions were specified directly. Inside an insulator, ho
 
 Gauss's law counts **all** electric charge. In matter we distinguish charge supplied or transported macroscopically (**free**) from charge created by displacement or orientation within the material (**bound**):
 
-$$\rho=\rho_f+\rho_b,\qquad \nabla\cdot\mathbf E=\frac{\rho_f+\rho_b}{\varepsilon_0}.$$
+$$
+\rho=\rho_f+\rho_b,\qquad \nabla\cdot\mathbf E=\frac{\rho_f+\rho_b}{\varepsilon_0}.
+$$
 
 The densities $\rho_f$ and $\rho_b$ have units $\mathrm{C/m^3}$; the field $\mathbf E$ has units $\mathrm{V/m}$. Both contribute to the *same* electric field. This division is a bookkeeping choice for material response, not a new kind of force. The next task is to express $\rho_b$ in terms of the microscopic displacements.
 
@@ -14,11 +16,15 @@ The densities $\rho_f$ and $\rho_b$ have units $\mathrm{C/m^3}$; the field $\mat
 
 An electric field shifts an electron cloud slightly relative to its positive nucleus; in a polar molecule it can also turn an existing dipole. A neutral object may therefore have a nonzero dipole moment. For charges $-q$ and $+q$ at $\mathbf r_-$ and $\mathbf r_+$,
 
-$$\boxed{\mathbf p=q(\mathbf r_+-\mathbf r_-)}.$$
+$$
+\boxed{\mathbf p=q(\mathbf r_+-\mathbf r_-)}.
+$$
 
 The displacement $\mathbf r_+-\mathbf r_-$ is in metres, so the dipole moment $\mathbf p$ is measured in $\mathrm{C\,m}$. The vector points from negative to positive charge, even when the *electron* moves in the opposite direction. In a small volume $\Delta V$ containing many atoms or molecules, add their moments:
 
-$$\boxed{\mathbf P(\mathbf r)\simeq\frac{1}{\Delta V}\sum_{i\in\Delta V}\mathbf p_i},\qquad [\mathbf P]=\mathrm{C\,m^{-2}}.$$
+$$
+\boxed{\mathbf P(\mathbf r)\simeq\frac{1}{\Delta V}\sum_{i\in\Delta V}\mathbf p_i},\qquad [\mathbf P]=\mathrm{C\,m^{-2}}.
+$$
 
 $\Delta V$ must contain many particles but be small compared with variations in the macroscopic material. Thus $\mathbf P$ is **electric dipole moment per unit volume** (usually we call it **Polarization density**); for $n$ equally oriented identical dipoles in unit volume, $\mathbf P=n\mathbf p$. This averaging is why an atomic picture becomes a smooth field.
 
@@ -26,15 +32,21 @@ $\Delta V$ must contain many particles but be small compared with variations in 
 
 Imagine aligned dipoles of length $d$ normal to a flat boundary, with number density $n$. Adjacent positive and negative ends cancel in the interior. Only an outermost layer of thickness $d$ remains uncompensated. For its area $A$,
 
-$$N=nAd,\qquad Q_{b,\rm surface}=Nq=nAdq.$$
+$$
+N=nAd,\qquad Q_{b,\rm surface}=Nq=nAdq.
+$$
 
 Here $n$ is the number of dipoles per volume ($\mathrm{m^{-3}}$), $A$ is area ($\mathrm{m^2}$), and $d$ is the normal separation ($\mathrm m$). Divide by area and recall $p=qd$:
 
-$$\sigma_b=\frac{Q_{b,\rm surface}}A=nqd=np=P.$$
+$$
+\sigma_b=\frac{Q_{b,\rm surface}}A=nqd=np=P.
+$$
 
 Only the component along the **outward normal** contributes at an arbitrarily oriented boundary, so
 
-$$\boxed{\sigma_b=\mathbf P\cdot\hat{\mathbf n}}.$$
+$$
+\boxed{\sigma_b=\mathbf P\cdot\hat{\mathbf n}}.
+$$
 
 The picture explains the sign: $\mathbf P$ pointing *out* leaves positive bound charge; pointing *in* leaves negative bound charge. This holds for a surface separating the polarised material from vacuum; at an interface between two polarised media the relevant normal jump is $\sigma_{b,\rm interface}=(\mathbf P_1-\mathbf P_2)\cdot\hat{\mathbf n}_{1\to2}$.
 
@@ -46,15 +58,21 @@ The picture explains the sign: $\mathbf P$ pointing *out* leaves positive bound 
 
 Uniform $\mathbf P$ cancels internally, but when the dipole density or orientation changes with position the cancellation is incomplete. Take any small macroscopic region $V$ *inside* the dielectric. The effective charge exposed on its imaginary cut is $\oint_{\partial V}\sigma_b  dS=\oint_{\partial V}\mathbf P\cdot d\mathbf S$. Since the microscopic dipoles crossing that cut are neutral as complete objects, the residual bound charge within the region has the opposite sign:
 
-$$Q_{b,\rm bulk}=-\oint_{\partial V}\mathbf P\cdot d\mathbf S.$$
+$$
+Q_{b,\rm bulk}=-\oint_{\partial V}\mathbf P\cdot d\mathbf S.
+$$
 
 Use the divergence theorem and $Q_{b,\rm bulk}=\int_V\rho_b\,dV$:
 
-$$\int_V\rho_b\,dV=-\int_V\nabla\cdot\mathbf P\,dV.$$
+$$
+\int_V\rho_b\,dV=-\int_V\nabla\cdot\mathbf P\,dV.
+$$
 
 As $V$ can be chosen arbitrarily,
 
-$$\boxed{\rho_b=-\nabla\cdot\mathbf P}.$$
+$$
+\boxed{\rho_b=-\nabla\cdot\mathbf P}.
+$$
 
 The first formula describes charge on a *physical boundary*, the second charge left in the *bulk*. They are not two names for the same location. Across a material boundary, a discontinuity in $\mathbf P$ appears as a bound surface sheet, consistent with the same divergence law in distribution form.
 
@@ -62,13 +80,19 @@ The first formula describes charge on a *physical boundary*, the second charge l
 
 Substitute the bound volume charge into the original Maxwell equation:
 
-$$\nabla\cdot\mathbf E=\frac{\rho_f-\nabla\cdot\mathbf P}{\varepsilon_0}$$
+$$
+\nabla\cdot\mathbf E=\frac{\rho_f-\nabla\cdot\mathbf P}{\varepsilon_0}
+$$
 
-$$\nabla\cdot(\varepsilon_0\mathbf E+\mathbf P)=\rho_f.$$
+$$
+\nabla\cdot(\varepsilon_0\mathbf E+\mathbf P)=\rho_f.
+$$
 
 The combination appears naturally, so call it the **electric displacement field**:
 
-$$\boxed{\mathbf D\equiv\varepsilon_0\mathbf E+\mathbf P},\qquad\boxed{\nabla\cdot\mathbf D=\rho_f}.$$
+$$
+\boxed{\mathbf D\equiv\varepsilon_0\mathbf E+\mathbf P},\qquad\boxed{\nabla\cdot\mathbf D=\rho_f}.
+$$
 
 The field $\mathbf D$ has units $\mathrm{C/m^2}$, as does $\varepsilon_0\mathbf E$. This is a convenient form of Gauss's law that counts only *free* charge on the right. It does **not** say that bound charge no longer produces an electric field. Nor does it tell us the relation between $\mathbf P$ and $\mathbf E$; for that, we need a model of the material.
 
@@ -76,15 +100,21 @@ The field $\mathbf D$ has units $\mathrm{C/m^2}$, as does $\varepsilon_0\mathbf 
 
 For a simple nonpolar atom, the electron cloud is most stable near equilibrium. A small displacement $\mathbf x$ (metres) makes its potential energy approximately quadratic, $U(x)\simeq U(0)+kx^2/2$, producing the restoring force $\mathbf F_r=-k\mathbf x$, with effective stiffness $k$ ($\mathrm{N/m}$). The Lorentz **oscillator model** uses $\mathbf F_e=-e\mathbf E_{\rm loc}$ for an electron in the local field. Static equilibrium gives
 
-$$-k\mathbf x-e\mathbf E_{\rm loc}=0\quad\Longrightarrow\quad\mathbf x=-\frac e k\mathbf E_{\rm loc}.$$
+$$
+-k\mathbf x-e\mathbf E_{\rm loc}=0\quad\Longrightarrow\quad\mathbf x=-\frac e k\mathbf E_{\rm loc}.
+$$
 
 The nucleus is positive, so the induced atomic dipole is $\mathbf p=-e\mathbf x$. The coefficient $\alpha$ is the atomic polarisability, with units $\mathrm{C\,m^2/V}$:
 
-$$\boxed{\mathbf p=\frac{e^2}{k}\mathbf E_{\rm loc}\equiv\alpha\mathbf E_{\rm loc}}.$$
+$$
+\boxed{\mathbf p=\frac{e^2}{k}\mathbf E_{\rm loc}\equiv\alpha\mathbf E_{\rm loc}}.
+$$
 
 With $n$ such atoms per unit volume, $\mathbf P=n\alpha\mathbf E_{\rm loc}$. In a sufficiently dilute medium, approximate the local field by the averaged field, $\mathbf E_{\rm loc}\simeq\mathbf E$ (the reason why it differs from the macroscopic electric field is that the local electric field is influenced by the electric field produced by neighbouring atoms). Define the electric susceptibility $\chi_e$ by writing this response as
 
-$$\boxed{\mathbf P=\varepsilon_0\chi_e\mathbf E},\qquad \chi_e\simeq\frac{n\alpha}{\varepsilon_0}=\frac{ne^2}{\varepsilon_0k}.$$
+$$
+\boxed{\mathbf P=\varepsilon_0\chi_e\mathbf E},\qquad \chi_e\simeq\frac{n\alpha}{\varepsilon_0}=\frac{ne^2}{\varepsilon_0k}.
+$$
 
 The susceptibility $\chi_e$ and relative permittivity $\varepsilon_r$ are dimensionless; $\varepsilon$ has units $\mathrm{F/m}$. The spring law was an *approximation*, not a Maxwell equation. Dense media have local-field corrections; permanent dipoles can reorient, while strong fields, crystals and changing frequencies can invalidate the simple scalar $\chi_e$.
 
@@ -92,11 +122,15 @@ The susceptibility $\chi_e$ and relative permittivity $\varepsilon_r$ are dimens
 
 Now return to the definition of $\mathbf D$ and insert the **linear, isotropic** response:
 
-$$\mathbf D=\varepsilon_0\mathbf E+\varepsilon_0\chi_e\mathbf E=\varepsilon_0(1+\chi_e)\mathbf E.$$
+$$
+\mathbf D=\varepsilon_0\mathbf E+\varepsilon_0\chi_e\mathbf E=\varepsilon_0(1+\chi_e)\mathbf E.
+$$
 
 With $\varepsilon_r=1+\chi_e$ and $\varepsilon=\varepsilon_0\varepsilon_r$,
 
-$$\boxed{\mathbf D=\varepsilon\mathbf E}.$$
+$$
+\boxed{\mathbf D=\varepsilon\mathbf E}.
+$$
 
 Keep the logical distinction: $\mathbf D=\varepsilon_0\mathbf E+\mathbf P$ is a **definition**; $\nabla\cdot\mathbf D=\rho_f$ is a **field equation**; $\mathbf P=\varepsilon_0\chi_e\mathbf E$ is a **material approximation**. In anisotropic matter $\varepsilon$ is generally a tensor rather than a single number.
 
@@ -291,9 +325,11 @@ In the second case, the extra energy comes from the battery. The capacitor is no
 
 ## 5.9 What the simple model leaves out
 
-Restoring force, inertia and damping together give $m\ddot x+m\gamma\dot x+kx=-eE(t)$. Here $m$ is the effective electron mass (kilograms), $\gamma$ the damping rate ($\mathrm{s^{-1}}$), and $\omega$ the angular frequency ($\mathrm{rad/s}$). For harmonic driving with the convention $E(t)=\operatorname{Re}(E_0e^{-i\omega t})$,
+Restoring force, inertia and damping together give $m\ddot x+m\gamma\dot x+kx=-eE(t)$. Here $m$ is the effective electron mass (kilograms), $\gamma$ the damping rate ($\mathrm{s^{-1}}$), and $\omega$ the angular frequency ($\mathrm{rad/s}$). For harmonic driving with the convention $E(t)=\mathrm{Re}(E_0e^{-i\omega t})$,
 
-$$\alpha(\omega)=\frac{e^2}{k-m\omega^2-im\gamma\omega}.$$
+$$
+\alpha(\omega)=\frac{e^2}{k-m\omega^2-im\gamma\omega}.
+$$
 
 This explains *why* real permittivity can depend on frequency and have an absorptive imaginary part. Detailed dispersion, local-field theory and nonlinear response belong to electrodynamics; the static constitutive law above is sufficient for the present chapter.
 

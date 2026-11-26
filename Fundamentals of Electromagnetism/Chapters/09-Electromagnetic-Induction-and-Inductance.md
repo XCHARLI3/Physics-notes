@@ -6,7 +6,9 @@ So far we have mainly used steady sources. Faraday found that moving a magnet ne
 
 For a surface $S$ bounded by a closed curve $C$, define magnetic flux $\Phi_B$ (webers, $1\,\mathrm{Wb}=1\,\mathrm{T\,m^2}$):
 
-$$\boxed{\Phi_B=\int_S\mathbf B\cdot d\mathbf S}.$$
+$$
+\boxed{\Phi_B=\int_S\mathbf B\cdot d\mathbf S}.
+$$
 
 The orientation of $C$ and its surface normal follow the right-hand rule. Since $\nabla\cdot\mathbf B=0$, different surfaces spanning the **same oriented boundary** have the same flux. When the contour moves, distinguish changes of field from changes of the surface it encloses.
 
@@ -16,13 +18,19 @@ The orientation of $C$ and its surface normal follow the right-hand rule. Since 
 
 For a **fixed** loop $C$, the induced electromotive force $\mathcal E$ (volts) is work per unit charge around the loop, $\mathcal E=\oint_C\mathbf E\cdot d\boldsymbol\ell$. Experiment gives
 
-$$\boxed{\oint_C\mathbf E\cdot d\boldsymbol\ell=-\frac d{dt}\int_S\mathbf B\cdot d\mathbf S}.$$
+$$
+\boxed{\oint_C\mathbf E\cdot d\boldsymbol\ell=-\frac d{dt}\int_S\mathbf B\cdot d\mathbf S}.
+$$
 
 Because $S$ is fixed, $d/dt$ passes through the surface integral. Stokes' theorem then converts the loop law into a local law:
 
-$$\int_S(\nabla\times\mathbf E)\cdot d\mathbf S=-\int_S\frac{\partial\mathbf B}{\partial t}\cdot d\mathbf S$$
+$$
+\int_S(\nabla\times\mathbf E)\cdot d\mathbf S=-\int_S\frac{\partial\mathbf B}{\partial t}\cdot d\mathbf S
+$$
 
-$$\boxed{\nabla\times\mathbf E=-\frac{\partial\mathbf B}{\partial t}}.$$
+$$
+\boxed{\nabla\times\mathbf E=-\frac{\partial\mathbf B}{\partial t}}.
+$$
 
 The electrostatic result $\nabla\times\mathbf E=0$ was not wrong; it belonged to *time-independent magnetic fields*. A changing magnetic field produces a circulating, non-conservative electric field.
 
@@ -36,7 +44,9 @@ The negative sign is expressed relative to the chosen loop orientation. Once tha
 
 A conductor moving at local velocity $\mathbf u$ ($\mathrm{m/s}$) through $\mathbf B$ carries its charge carriers with it. In the laboratory frame their Lorentz force per unit charge is $\mathbf E+\mathbf u\times\mathbf B$ (ignoring small drift-dependent details in the emf bookkeeping). For a *moving material loop* $C(t)$,
 
-$$\boxed{\mathcal E=\oint_{C(t)}(\mathbf E+\mathbf u\times\mathbf B)\cdot d\boldsymbol\ell}.$$
+$$
+\boxed{\mathcal E=\oint_{C(t)}(\mathbf E+\mathbf u\times\mathbf B)\cdot d\boldsymbol\ell}.
+$$
 
 Consider a straight bar of length $\ell$ (metres) moving right with speed $v$ ($\mathrm{m/s}$) on conducting rails, in a uniform field $\mathbf B$ into the page. Positive charges are driven upward by $\mathbf v\times\mathbf B$, giving a motional emf of magnitude $B\ell v$ along the bar.
 
@@ -48,13 +58,17 @@ Consider a straight bar of length $\ell$ (metres) moving right with speed $v$ ($
 
 The flux through the rails-and-bar loop grows at rate $d\Phi_B/dt=B\ell v$ with the normal chosen into the page. The circulating emf is opposite that chosen orientation, so $\mathcal E=-d\Phi_B/dt$. More generally the **flux rule**
 
-$$\boxed{\mathcal E=-\frac{d\Phi_B}{dt}}$$
+$$
+\boxed{\mathcal E=-\frac{d\Phi_B}{dt}}
+$$
 
 holds for an ordinary smoothly moving/deforming material circuit, when its motion is included in the *total* flux derivative and the emf includes both terms in $\mathbf E+\mathbf u\times\mathbf B$. For a stationary circuit the motion term vanishes. Be careful with a contour that is not attached to material, with changing circuit topology, or with a moving contact: the line-integral definition is more fundamental than blindly applying a flux mnemonic.
 
 For a coil of $N$ turns and area $A$ rotating with angular speed $\omega$ ($\mathrm{rad/s}$) in a uniform static field, the flux **through one turn** is $\Phi_B^{(1)}=BA\cos(\omega t)$. The linkage of all turns is $N\Phi_B^{(1)}$, so Faraday's law gives
 
-$$\mathcal E=-\frac{d}{dt}(N\Phi_B^{(1)})=\boxed{NBA\omega\sin(\omega t)}.$$
+$$
+\mathcal E=-\frac{d}{dt}(N\Phi_B^{(1)})=\boxed{NBA\omega\sin(\omega t)}.
+$$
 
 This elementary alternating-current generator works by moving conductors through magnetic flux; eddy currents occur when induction drives closed currents inside a bulk conductor. In either case a changing flux alone does not specify the current until the circuit resistance and geometry are included.
 
@@ -80,11 +94,15 @@ $$
 
 This motivates the definition of **flux linkage**:
 
-$$\boxed{\lambda=\sum_{i=1}^N\Phi_i}.$$
+$$
+\boxed{\lambda=\sum_{i=1}^N\Phi_i}.
+$$
 
 If every turn links the same magnetic flux, then
 
-$$\lambda=N\Phi_B.$$
+$$
+\lambda=N\Phi_B.
+$$
 
 Flux linkage is not a new magnetic field or the flux through 
 a single surface. It accounts for the total flux linked by 
@@ -103,22 +121,28 @@ $$
 For a fixed geometry, the expression inside the brackets 
 is independent of $I$. Therefore,
 
-$$\mathbf B\propto I,\qquad
+$$
+\mathbf B\propto I,\qquad
 \Phi_B\propto I,\qquad
-\lambda\propto I.$$
+\lambda\propto I.
+$$
 
 The same proportionality holds for fixed geometries containing 
 linear magnetic materials with no permanent magnetisation.
 
 We therefore introduce the **self-inductance** $L$:
 
-$$\boxed{\lambda=LI}.$$
+$$
+\boxed{\lambda=LI}.
+$$
 
 For equal flux through each turn,
 
-$$\boxed{L=\frac{N\Phi_B}{I}},
+$$
+\boxed{L=\frac{N\Phi_B}{I}},
 \qquad
-[L]=\mathrm H=\mathrm{V\,s/A}.$$
+[L]=\mathrm H=\mathrm{V\,s/A}.
+$$
 
 Self-inductance describes how much flux linkage a current 
 produces in its own coil. For a fixed linear system, $L$ 
@@ -139,7 +163,9 @@ $$
 
 For constant $L$,
 
-$$\boxed{\mathcal E_{\rm self}=-L\frac{dI}{dt}}.$$
+$$
+\boxed{\mathcal E_{\rm self}=-L\frac{dI}{dt}}.
+$$
 
 The physical mechanism is a feedback process:
 
@@ -172,7 +198,9 @@ The self-inductance has two connected physical meanings:
 For an ideal long vacuum solenoid of $N$ turns, length 
 $\ell$ and cross-sectional area $A$,
 
-$$B\simeq\frac{\mu_0NI}{\ell}.$$
+$$
+B\simeq\frac{\mu_0NI}{\ell}.
+$$
 
 The total flux linkage is
 
@@ -183,7 +211,9 @@ $$
 
 Comparing with $\lambda=LI$ gives
 
-$$\boxed{L\simeq\frac{\mu_0N^2A}{\ell}}.$$
+$$
+\boxed{L\simeq\frac{\mu_0N^2A}{\ell}}.
+$$
 
 The factor $N^2$ arises because all $N$ turns contribute 
 to producing the magnetic field, and that field in turn 
@@ -192,7 +222,9 @@ links all $N$ turns.
 For a uniform linear magnetic core, neglecting end and 
 demagnetising effects,
 
-$$\boxed{L\simeq\frac{\mu N^2A}{\ell}}.$$
+$$
+\boxed{L\simeq\frac{\mu N^2A}{\ell}}.
+$$
 
 A high-permeability core therefore increases the flux 
 linkage produced by a given current and hence increases 
@@ -223,7 +255,9 @@ proportional to $I_1$.
 
 We define the mutual inductance $M_{21}$ by
 
-$$\boxed{\lambda_{2\leftarrow1}=M_{21}I_1}.$$
+$$
+\boxed{\lambda_{2\leftarrow1}=M_{21}I_1}.
+$$
 
 If all $N_2$ turns link the same flux,
 
@@ -255,7 +289,9 @@ with $N_1$ and $N_2$ turns respectively.
 
 The magnetic field produced by coil 1 is
 
-$$B_1\simeq\frac{\mu_0N_1I_1}{\ell}.$$
+$$
+B_1\simeq\frac{\mu_0N_1I_1}{\ell}.
+$$
 
 The resulting flux linkage in coil 2 is
 
@@ -266,13 +302,17 @@ $$
 
 Therefore,
 
-$$\boxed{M_{21}\simeq\frac{\mu_0N_1N_2A}{\ell}}.$$
+$$
+\boxed{M_{21}\simeq\frac{\mu_0N_1N_2A}{\ell}}.
+$$
 
 Repeating the calculation with the roles of the coils 
 reversed gives the same result. More generally, for 
 ordinary reciprocal linear media,
 
-$$\boxed{M_{12}=M_{21}=M}.$$
+$$
+\boxed{M_{12}=M_{21}=M}.
+$$
 
 This property is known as **reciprocity**.
 
@@ -345,7 +385,9 @@ $$
 
 or
 
-$$\boxed{L\frac{dI}{dt}+RI=\mathcal E}.$$
+$$
+\boxed{L\frac{dI}{dt}+RI=\mathcal E}.
+$$
 
 Note the distinction between the self-induced emf and the 
 terminal voltage of an ideal inductor under the passive 
@@ -406,11 +448,15 @@ of that value.
 If the source is removed while the resistor and inductor 
 remain in a closed loop,
 
-$$L\frac{dI}{dt}+RI=0.$$
+$$
+L\frac{dI}{dt}+RI=0.
+$$
 
 For an initial current $I_0$,
 
-$$\boxed{I(t)=I_0e^{-t/\tau_{RL}}}.$$
+$$
+\boxed{I(t)=I_0e^{-t/\tau_{RL}}}.
+$$
 
 The induced emf now acts in the direction of the original 
 current, opposing its decay.
@@ -420,11 +466,15 @@ current, opposing its decay.
 
 For a capacitor of constant capacitance,
 
-$$I=C\frac{dV}{dt}.$$
+$$
+I=C\frac{dV}{dt}.
+$$
 
 For an inductor of constant inductance,
 
-$$V_L=L\frac{dI}{dt}.$$
+$$
+V_L=L\frac{dI}{dt}.
+$$
 
 A sudden finite change in capacitor voltage would require 
 an impulsive current, while a sudden finite change in 
@@ -441,15 +491,21 @@ external source must supply energy.
 
 For an ideal inductor,
 
-$$V_L=L\frac{dI}{dt}.$$
+$$
+V_L=L\frac{dI}{dt}.
+$$
 
 The power delivered to the inductor is
 
-$$P_L=IV_L=LI\frac{dI}{dt}.$$
+$$
+P_L=IV_L=LI\frac{dI}{dt}.
+$$
 
 Hence the incremental work supplied is
 
-$$dW=P_L\,dt=LI\,dI.$$
+$$
+dW=P_L\,dt=LI\,dI.
+$$
 
 For constant $L$, increasing the current from zero to $I$ 
 stores energy
@@ -483,7 +539,9 @@ $$
 Since $A\ell$ is the volume occupied by the approximately 
 uniform magnetic field,
 
-$$\boxed{u_B=\frac{B^2}{2\mu_0}}.$$
+$$
+\boxed{u_B=\frac{B^2}{2\mu_0}}.
+$$
 
 This recovers the magnetic energy density introduced in 
 Section 8.7. The energy stored in an inductor is therefore 
@@ -511,7 +569,9 @@ resistive heating and the increase in stored magnetic energy.
 
 When the source is removed from a closed RL circuit,
 
-$$\frac{dU_L}{dt}=-RI^2,$$
+$$
+\frac{dU_L}{dt}=-RI^2,
+$$
 
 so the stored magnetic energy is gradually released 
 and dissipated as heat in the resistor.

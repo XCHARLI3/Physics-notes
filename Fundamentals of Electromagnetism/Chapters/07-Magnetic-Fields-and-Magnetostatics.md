@@ -6,11 +6,15 @@ Electric forces act on charges whether or not they move. Experiments by Ørsted 
 
 A particle of charge $q$ (coulombs) moving with velocity $\mathbf v$ ($\mathrm{m/s}$) in electric and magnetic fields $\mathbf E$ ($\mathrm{V/m}$) and $\mathbf B$ (tesla, $\mathrm T$) experiences the experimentally established **Lorentz force**:
 
-$$\boxed{\mathbf F=q(\mathbf E+\mathbf v\times\mathbf B)}.$$
+$$
+\boxed{\mathbf F=q(\mathbf E+\mathbf v\times\mathbf B)}.
+$$
 
 The magnetic part is perpendicular to the motion, because $\mathbf v\cdot(\mathbf v\times\mathbf B)=0$. Consequently,
 
-$$\frac{d}{dt}\left(\tfrac12mv^2\right)=\mathbf F\cdot\mathbf v=q\mathbf E\cdot\mathbf v.$$
+$$
+\frac{d}{dt}\left(\tfrac12mv^2\right)=\mathbf F\cdot\mathbf v=q\mathbf E\cdot\mathbf v.
+$$
 
 A magnetic field alone changes the *direction* of nonrelativistic velocity, not its speed. In the kinetic-energy equation $m$ is particle mass (kilograms) and $v=|\mathbf v|$; $1\,\mathrm T=1\,\mathrm{N/(A\,m)}$.
 
@@ -21,36 +25,50 @@ Consider a particle of charge $q$ and mass $m$ moving in a uniform magnetic fiel
 
 If $\mathbf v\perp\mathbf B$, the magnetic force acts as the centripetal force, causing the particle to move in a circular orbit:
 
-$$|q|v_\perp B=\frac{mv_\perp^2}{r}.$$
+$$
+|q|v_\perp B=\frac{mv_\perp^2}{r}.
+$$
 
 Rearranging and using $\omega_c=v_\perp/r$, we obtain
 
-$$\boxed{r=\frac{mv_\perp}{|q|B}},\qquad
-\boxed{\omega_c=\frac{|q|B}{m}}.$$
+$$
+\boxed{r=\frac{mv_\perp}{|q|B}},\qquad
+\boxed{\omega_c=\frac{|q|B}{m}}.
+$$
 
 Here $r$ is the radius of the circular orbit (metres), $v_\perp$ is the speed perpendicular to the magnetic field, and $\omega_c$ is the cyclotron angular frequency ($\mathrm{rad/s}$). The sign of $q$ determines the direction of rotation, while the angular frequency is independent of the particle's speed in the nonrelativistic regime.
 
 If the particle also has a velocity component $v_\parallel$ parallel to $\mathbf B$, this component remains unchanged because the magnetic force acts only on the perpendicular component. The combination of circular motion perpendicular to the field and uniform motion along the field produces a helical trajectory. Since each revolution takes a period $T=2\pi/\omega_c$, the distance travelled along the field during one revolution, known as the *pitch*, is
 
-$$\boxed{h=|v_\parallel|T=\frac{2\pi|v_\parallel|}{\omega_c}}.$$
+$$
+\boxed{h=|v_\parallel|T=\frac{2\pi|v_\parallel|}{\omega_c}}.
+$$
 
 ### Velocity selector
 
 When both electric and magnetic fields are present, the total force on a charged particle is given by the Lorentz force:
 
-$$\mathbf F=q(\mathbf E+\mathbf v\times\mathbf B).$$
+$$
+\mathbf F=q(\mathbf E+\mathbf v\times\mathbf B).
+$$
 
 If $\mathbf E\perp\mathbf B$ and the particle travels perpendicular to both fields in the appropriate direction, the electric and magnetic forces oppose each other. The particle passes through without deflection when
 
-$$\mathbf E+\mathbf v\times\mathbf B=0.$$
+$$
+\mathbf E+\mathbf v\times\mathbf B=0.
+$$
 
 Equating the magnitudes of the two forces gives
 
-$$|q|E=|q|vB,$$
+$$
+|q|E=|q|vB,
+$$
 
 and hence
 
-$$\boxed{v=\frac{E}{B}}.$$
+$$
+\boxed{v=\frac{E}{B}}.
+$$
 
 This is the principle of a *velocity selector*: only particles travelling at the selected speed along the chosen direction experience no net force.
 
@@ -64,27 +82,39 @@ As the charge carriers move through the conductor, the magnetic force deflects t
 
 As more charge accumulates, the Hall field becomes stronger until the electric force balances the magnetic force:
 
-$$q(\mathbf E_H+\mathbf v_d\times\mathbf B)=0.$$
+$$
+q(\mathbf E_H+\mathbf v_d\times\mathbf B)=0.
+$$
 
 Since the drift velocity is perpendicular to the magnetic field, the magnitudes satisfy
 
-$$|q|E_H=|q|v_dB,$$
+$$
+|q|E_H=|q|v_dB,
+$$
 
 giving
 
-$$E_H=v_dB.$$
+$$
+E_H=v_dB.
+$$
 
 The resulting potential difference across the width of the slab is called the *Hall voltage*. Its magnitude is
 
-$$|V_H|=E_Hw=v_dBw.$$
+$$
+|V_H|=E_Hw=v_dBw.
+$$
 
 Using the relation between current and drift speed,
 
-$$I=n|q|v_dA=n|q|v_dwt,$$
+$$
+I=n|q|v_dA=n|q|v_dwt,
+$$
 
 we eliminate $v_d$ to obtain
 
-$$\boxed{|V_H|=\frac{IB}{n|q|t}}.$$
+$$
+\boxed{|V_H|=\frac{IB}{n|q|t}}.
+$$
 
 Here $n$ is the number density of charge carriers ($\mathrm{m^{-3}}$), $v_d$ is their drift speed ($\mathrm{m/s}$), and $V_H$ is the Hall voltage (volts).
 
@@ -94,11 +124,15 @@ For a fixed current direction and magnetic field, the polarity of the Hall volta
 
 A mass spectrometer makes use of the dependence of the circular orbit radius on the mass and charge of a particle:
 
-$$r=\frac{mv}{|q|B}.$$
+$$
+r=\frac{mv}{|q|B}.
+$$
 
 For particles entering a uniform magnetic field perpendicularly with the same speed, different mass-to-charge ratios produce different orbit radii. Measuring these radii therefore allows the particles to be distinguished according to their mass-to-charge ratios:
 
-$$\boxed{\frac{m}{|q|}=\frac{Br}{v}}.$$
+$$
+\boxed{\frac{m}{|q|}=\frac{Br}{v}}.
+$$
 
 
 ## 7.3 From Single Carriers to Forces on Wires
