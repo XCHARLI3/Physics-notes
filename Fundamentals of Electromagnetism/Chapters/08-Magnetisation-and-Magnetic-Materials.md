@@ -10,39 +10,39 @@ Consider a particle of mass $m_e$ and charge $q$ moving
 with speed $v$ in a circular orbit of radius $r$. Its 
 motion carries orbital angular momentum
 
-$$
+```math
 \mathbf L=m_evr\hat{\mathbf n},
-$$
+```
 
 where $\hat{\mathbf n}$ is the normal to the orbital plane 
 given by the right-hand rule. Since the charge passes 
 through a fixed point once every period $T=2\pi r/v$, 
 its motion is equivalent to an average circulating current
 
-$$
+```math
 I=\frac{q}{T}=\frac{qv}{2\pi r}.
-$$
+```
 
 The corresponding magnetic dipole moment is
 
-$$
+```math
 \mathbf m=IA\hat{\mathbf n}
 =\frac{qv}{2\pi r}\pi r^2\hat{\mathbf n}
 =\frac{qvr}{2}\hat{\mathbf n}.
-$$
+```
 
 Comparing this with $\mathbf L$ gives
 
-$$
+```math
 \boxed{\mathbf m=\frac{q}{2m_e}\mathbf L}.
-$$
+```
 
 For an electron, $q=-e$, so
 
-$$
+```math
 \boxed{\mathbf m_{\rm orbital}
 =-\frac{e}{2m_e}\mathbf L}.
-$$
+```
 
 The negative sign arises because conventional current 
 flows opposite to electron motion. Angular momentum 
@@ -61,11 +61,11 @@ about its own axis.
 This led to the concept of spin, $\mathbf S$, an intrinsic 
 quantum angular momentum with an associated magnetic moment
 
-$$
+```math
 \boxed{\mathbf m_{\rm spin}
 =-g_s\frac{e}{2m_e}\mathbf S},
 \qquad g_s\simeq 2.0023.
-$$
+```
 
 Spin is a genuine form of angular momentum, but **not 
 a literal rotation of a charged sphere**. It obeys the 
@@ -75,9 +75,9 @@ can exist independently of orbital motion.
 The natural scale of an electron's magnetic moment is 
 the Bohr magneton,
 
-$$
+```math
 \boxed{\mu_B=\frac{e\hbar}{2m_e}},
-$$
+```
 
 where $\hbar$ is the reduced Planck constant and 
 $\mu_B$ has units $\mathrm{J/T}$ (equivalently 
@@ -100,19 +100,19 @@ the electron's internal structure.
 In a uniform external magnetic field, a current loop 
 experiences magnetic forces on its different segments,
 
-$$
+```math
 d\mathbf F=I\,d\mathbf l\times\mathbf B.
-$$
+```
 
 Although the net force vanishes, these forces act at 
 different positions and can produce a net torque 
 (Chapter 7):
 
-$$
+```math
 \boxed{\boldsymbol\tau=\mathbf m\times\mathbf B},
 \qquad
 \boxed{U=-\mathbf m\cdot\mathbf B}.
-$$
+```
 
 Here $\boldsymbol\tau$ is the torque exerted by the 
 external magnetic field on the magnetic dipole, and 
@@ -133,17 +133,17 @@ Lorentz forces. Instead, the magnetic field couples
 directly to its intrinsic magnetic moment through 
 the quantum interaction Hamiltonian
 
-$$
+```math
 \hat H_{\rm int}=-\hat{\mathbf m}_{\rm spin}
 \cdot\mathbf B.
-$$
+```
 
 The resulting evolution of the spin expectation value is
 
-$$
+```math
 \frac{d\langle\mathbf S\rangle}{dt}
 =\langle\mathbf m_{\rm spin}\rangle\times\mathbf B.
-$$
+```
 
 Thus, torque is understood more generally as the rate 
 of change of angular momentum. In a uniform static 
@@ -166,7 +166,7 @@ and spin. Rather than describing each moment individually,
 we define magnetisation as the net magnetic dipole moment 
 per unit volume:
 
-$$
+```math
 \boxed{
 \mathbf M(\mathbf r)\simeq
 \frac{1}{\Delta V}
@@ -174,7 +174,7 @@ $$
 },
 \qquad
 [\mathbf M]=\mathrm{A\,m^{-1}}.
-$$
+```
 
 As in electric polarisation, the averaging volume 
 $\Delta V$ must contain sufficiently many microscopic 
@@ -185,9 +185,9 @@ Writing the number density as $n=N/\Delta V$ and the
 average microscopic moment as 
 $\langle\mathbf m\rangle=\frac1N\sum_i\mathbf m_i$, we obtain
 
-$$
+```math
 \boxed{\mathbf M=n\langle\mathbf m\rangle}.
-$$
+```
 
 For identical, fully aligned moments, 
 $\mathbf M=n\mathbf m$. Random or opposing orientations 
@@ -199,9 +199,9 @@ direction of a material's net magnetic dipole density,
 rather than the magnetic field itself. The total magnetic 
 dipole moment of a material is
 
-$$
+```math
 \mathbf m_{\rm total}=\int_V\mathbf M(\mathbf r)\,dV.
-$$
+```
 
 Since microscopic magnetic moments can be represented 
 by equivalent current loops, their collective magnetic 
@@ -235,9 +235,9 @@ Consider a uniformly magnetised cube of side length $a$,
 with magnetisation along the $z$-direction. Divide the cube 
 into $N$ layers of thickness
 
-$$
+```math
 \Delta z=\frac{a}{N}.
-$$
+```
 
 After cancellation of neighbouring loops within each layer, 
 each layer can be represented by an equivalent current loop 
@@ -245,24 +245,24 @@ of area $a^2$, carrying current $I_0$.
 
 The total magnetic dipole moment is therefore
 
-$$
+```math
 \sum_i\mathbf m_i=NI_0a^2\hat{\mathbf z}.
-$$
+```
 
 Dividing by the volume gives
 
-$$
+```math
 \mathbf M
 =\frac{NI_0a^2}{a^3}\hat{\mathbf z}
 =\frac{NI_0}{a}\hat{\mathbf z}
 =\frac{I_0}{\Delta z}\hat{\mathbf z}.
-$$
+```
 
 Thus,
 
-$$
+```math
 \boxed{M=\frac{I_0}{\Delta z}}.
-$$
+```
 
 The area of the current loop cancels with the corresponding 
 cross-sectional area in the volume, leaving a length 
@@ -276,20 +276,20 @@ uniformly magnetised continuous medium.
 
 In the continuum limit, keeping $M$ fixed gives
 
-$$
+```math
 dI=M\,dz.
-$$
+```
 
 Now consider a side surface of the cube. All $N$ layers 
 contribute current across a line of length $a$ perpendicular 
 to the current direction. Since surface current density is 
 current per unit transverse length,
 
-$$
+```math
 K_b=\frac{NI_0}{a}
 =\frac{I_0}{\Delta z}
 =M.
-$$
+```
 
 For an arbitrarily oriented surface, only the component 
 of $\mathbf M$ parallel to the surface contributes to 
@@ -299,15 +299,15 @@ $\hat{\mathbf n}$, as determined by the right-hand rule.
 
 Hence,
 
-$$
+```math
 \boxed{\mathbf K_b=\mathbf M\times\hat{\mathbf n}},
-$$
+```
 
 with magnitude
 
-$$
+```math
 K_b=M\sin\theta,
-$$
+```
 
 where $\theta$ is the angle between $\mathbf M$ and 
 $\hat{\mathbf n}$.
@@ -333,9 +333,9 @@ strengths.
 
 Consider a non-uniform magnetisation
 
-$$
+```math
 \mathbf M=M_z(x)\hat{\mathbf z}.
-$$
+```
 
 Take two adjacent rectangular cells of dimensions 
 $\Delta x$, $\Delta y$ and $\Delta z$, centred at $x$ 
@@ -344,19 +344,19 @@ in the $xy$-plane.
 
 Using the definition of magnetisation,
 
-$$
+```math
 M_z=\frac{I\Delta x\Delta y}
 {\Delta x\Delta y\Delta z}
 =\frac{I}{\Delta z},
-$$
+```
 
 the equivalent currents in the two cells are
 
-$$
+```math
 I_1=M_z(x)\Delta z,
 \qquad
 I_2=M_z(x+\Delta x)\Delta z.
-$$
+```
 
 By the right-hand rule, the left loop contributes current 
 along $+\hat{\mathbf y}$ at the shared boundary, while 
@@ -365,13 +365,13 @@ the right loop contributes along $-\hat{\mathbf y}$.
 Taking $+y$ as the positive current direction, the remaining 
 current is
 
-$$
+```math
 \begin{aligned}
 \Delta I_y
 &=I_1-I_2\\
 &=[M_z(x)-M_z(x+\Delta x)]\Delta z.
 \end{aligned}
-$$
+```
 
 Unlike surface current density, volume current density 
 is defined as current per unit cross-sectional area 
@@ -382,20 +382,20 @@ the relevant cross-section lies in the $xz$-plane, with
 area $\Delta x\Delta z$. Averaging the remaining current 
 over this cross-section gives
 
-$$
+```math
 \begin{aligned}
 J_{b,y}
 &\simeq\frac{\Delta I_y}{\Delta x\Delta z}\\
 &=\frac{M_z(x)-M_z(x+\Delta x)}{\Delta x}\\
 &=-\frac{M_z(x+\Delta x)-M_z(x)}{\Delta x}.
 \end{aligned}
-$$
+```
 
 Taking the continuum limit,
 
-$$
+```math
 \boxed{J_{b,y}=-\frac{\partial M_z}{\partial x}}.
-$$
+```
 
 The negative sign follows directly from the opposing 
 directions of the neighbouring currents: if $M_z$ 
@@ -404,11 +404,11 @@ increases along $+x$, the current along $-y$ dominates.
 The same argument can also be expressed using the 
 surface currents of the two neighbouring cells:
 
-$$
+```math
 \mathbf K_1=\mathbf M(x)\times\hat{\mathbf x},
 \qquad
 \mathbf K_2=\mathbf M(x+\Delta x)\times(-\hat{\mathbf x}).
-$$
+```
 
 Their sum gives the remaining current per unit transverse 
 length. Dividing by the cell spacing $\Delta x$ and taking 
@@ -418,16 +418,16 @@ Similarly, a variation of $M_x$ along $z$ contributes
 $\partial M_x/\partial z$ to $J_{b,y}$. Combining both 
 contributions,
 
-$$
+```math
 J_{b,y}=
 \frac{\partial M_x}{\partial z}
 -\frac{\partial M_z}{\partial x}.
-$$
+```
 
 Applying the same argument to all three coordinate 
 directions gives
 
-$$
+```math
 \begin{aligned}
 J_{b,x}&=\frac{\partial M_z}{\partial y}
 -\frac{\partial M_y}{\partial z},\\
@@ -436,14 +436,14 @@ J_{b,y}&=\frac{\partial M_x}{\partial z}
 J_{b,z}&=\frac{\partial M_y}{\partial x}
 -\frac{\partial M_x}{\partial y}.
 \end{aligned}
-$$
+```
 
 These are precisely the components of the curl of 
 $\mathbf M$. Therefore,
 
-$$
+```math
 \boxed{\mathbf J_b=\nabla\times\mathbf M}.
-$$
+```
 
 ### Physical interpretation of bound currents
 
@@ -453,9 +453,9 @@ but may have nonzero $\mathbf K_b$ at its surface.
 However, non-uniform magnetisation does not necessarily 
 produce a nonzero volume current. For example,
 
-$$
+```math
 \mathbf M=M_z(z)\hat{\mathbf z}
-$$
+```
 
 has zero curl even though its magnitude varies with 
 position. In this case, the strengths of the loops vary 
@@ -464,12 +464,12 @@ loops within each layer still cancel.
 
 Since the divergence of a curl is identically zero,
 
-$$
+```math
 \boxed{
 \nabla\cdot\mathbf J_b
 =\nabla\cdot(\nabla\times\mathbf M)=0
 }.
-$$
+```
 
 This reflects the circulating nature of the underlying 
 microscopic current-loop model. The complete bound-current 
@@ -480,7 +480,7 @@ Bound volume and surface currents are therefore not
 different microscopic mechanisms, but different spatial 
 manifestations of the same magnetisation:
 
-$$
+```math
 \boxed{
 \begin{aligned}
 \mathbf K_b&=\mathbf M\times\hat{\mathbf n},
@@ -489,7 +489,7 @@ $$
 &[\mathbf J_b]&=\mathrm{A/m^2}.
 \end{aligned}
 }
-$$
+```
 
 Although bound currents originate from local circulating 
 magnetic moments, being a closed current loop is not what 
@@ -503,9 +503,9 @@ physical origin.
 In magnetostatics, the total macroscopic current density 
 can be separated into free and bound contributions:
 
-$$
+```math
 \mathbf J=\mathbf J_f+\mathbf J_b.
-$$
+```
 
 Free current $\mathbf J_f$ describes current not included 
 in the magnetisation, such as conduction current supplied 
@@ -517,52 +517,52 @@ Both contribute to the magnetic field $\mathbf B$.
 
 Substituting the bound volume current into Ampère's law,
 
-$$
+```math
 \begin{aligned}
 \nabla\times\mathbf B
 &=\mu_0(\mathbf J_f+\mathbf J_b)\\
 &=\mu_0(\mathbf J_f+\nabla\times\mathbf M).
 \end{aligned}
-$$
+```
 
 Rearranging,
 
-$$
+```math
 \frac{1}{\mu_0}\nabla\times\mathbf B
 -\nabla\times\mathbf M
 =\mathbf J_f.
-$$
+```
 
 By the linearity of the curl,
 
-$$
+```math
 \nabla\times
 \left(\frac{\mathbf B}{\mu_0}-\mathbf M\right)
 =\mathbf J_f.
-$$
+```
 
 This motivates the definition of the **auxiliary magnetic 
 field** (magnetic field strength)
 
-$$
+```math
 \boxed{\mathbf H\equiv\frac{\mathbf B}{\mu_0}-\mathbf M},
 \qquad [\mathbf H]=\mathrm{A/m}.
-$$
+```
 
 Ampère's law then becomes
 
-$$
+```math
 \boxed{\nabla\times\mathbf H=\mathbf J_f}
 \qquad\text{(magnetostatics)}.
-$$
+```
 
 Applying Stokes' theorem gives the corresponding integral 
 form,
 
-$$
+```math
 \boxed{\oint_C\mathbf H\cdot d\mathbf l
 =I_{f,\mathrm{enc}}}.
-$$
+```
 
 The advantage of introducing $\mathbf H$ is that only free 
 current appears explicitly in Ampère's law, while the effects 
@@ -570,30 +570,30 @@ of bound currents are incorporated into the magnetisation.
 
 Rearranging the definition gives
 
-$$
+```math
 \boxed{\mathbf B=\mu_0(\mathbf H+\mathbf M)}.
-$$
+```
 
 However, $\mathbf H$ should not generally be interpreted 
 as the magnetic field produced by free currents alone.
 
 Since
 
-$$
+```math
 \nabla\cdot\mathbf B=0,
-$$
+```
 
 we have
 
-$$
+```math
 \nabla\cdot(\mathbf H+\mathbf M)=0,
-$$
+```
 
 and therefore
 
-$$
+```math
 \boxed{\nabla\cdot\mathbf H=-\nabla\cdot\mathbf M}.
-$$
+```
 
 Although the curl of $\mathbf H$ is determined by free 
 currents, its divergence and boundary conditions are still 
@@ -619,9 +619,9 @@ in Gauss' law.
 
 The definition
 
-$$
+```math
 \mathbf B=\mu_0(\mathbf H+\mathbf M)
-$$
+```
 
 does not specify how the microscopic magnetic moments 
 respond to a magnetic field, or how much magnetisation 
@@ -641,33 +641,33 @@ is smooth near $H=0$.
 Along a fixed direction, the magnetisation can be expanded 
 as
 
-$$
+```math
 M(H)=M(0)
 +\left.\frac{dM}{dH}\right|_{H=0}H
 +\frac{1}{2}\left.\frac{d^2M}{dH^2}\right|_{H=0}H^2
 +\cdots.
-$$
+```
 
 If $M(0)=0$ and the field is sufficiently weak, higher-order 
 terms can be neglected:
 
-$$
+```math
 M(H)\simeq\left.\frac{dM}{dH}\right|_{H=0}H.
-$$
+```
 
 The magnetic susceptibility is defined in this linear 
 response regime as
 
-$$
+```math
 \boxed{\chi_m=
 \left.\frac{dM}{dH}\right|_{H=0}}.
-$$
+```
 
 For a linear, isotropic medium, the vector form is
 
-$$
+```math
 \boxed{\mathbf M=\chi_m\mathbf H}.
-$$
+```
 
 The susceptibility $\chi_m$ is dimensionless and measures 
 the strength and sign of the material's magnetic response.
@@ -685,33 +685,33 @@ a tensor rather than a scalar.
 Substituting the linear constitutive relation into the 
 definition of $\mathbf H$ gives
 
-$$
+```math
 \begin{aligned}
 \mathbf B
 &=\mu_0(\mathbf H+\mathbf M)\\
 &=\mu_0(\mathbf H+\chi_m\mathbf H)\\
 &=\mu_0(1+\chi_m)\mathbf H.
 \end{aligned}
-$$
+```
 
 Define the magnetic permeability
 
-$$
+```math
 \boxed{\mu=\mu_0(1+\chi_m)},
-$$
+```
 
 where $\mu$ has units $\mathrm{H/m}$. The constitutive 
 relation becomes
 
-$$
+```math
 \boxed{\mathbf B=\mu\mathbf H}.
-$$
+```
 
 The relative permeability is
 
-$$
+```math
 \boxed{\mu_r=\frac{\mu}{\mu_0}=1+\chi_m}.
-$$
+```
 
 For a given $\mathbf H$, permeability determines the 
 resulting magnetic flux density in a linear, isotropic 
@@ -719,15 +719,15 @@ medium.
 
 It is important to distinguish the general definition
 
-$$
+```math
 \mathbf B=\mu_0(\mathbf H+\mathbf M)
-$$
+```
 
 from the particular constitutive approximation
 
-$$
+```math
 \mathbf B=\mu\mathbf H.
-$$
+```
 
 The former is a general relationship between the three 
 macroscopic fields, while the latter depends on the 
@@ -748,9 +748,9 @@ Consider an initial uniform magnetic field $\mathbf B_0$
 in vacuum. In the absence of magnetic material, $\mathbf M=0$, 
 and therefore
 
-$$
+```math
 \mathbf H_0=\frac{\mathbf B_0}{\mu_0}.
-$$
+```
 
 When a magnetic material is introduced, the external field 
 interacts with its microscopic magnetic moments.
@@ -761,9 +761,9 @@ These moments can be represented by equivalent current loops
 with different orientations. In the unmagnetised state, 
 their contributions cancel on a macroscopic scale:
 
-$$
+```math
 \mathbf M=\frac{1}{\Delta V}\sum_i\mathbf m_i=0.
-$$
+```
 
 Zero net magnetisation therefore does not imply the absence 
 of microscopic magnetic moments or equivalent current loops.
@@ -772,11 +772,11 @@ When an external magnetic field is applied, each microscopic
 magnetic moment interacts with its local magnetic field 
 through the torque and interaction energy
 
-$$
+```math
 \boldsymbol\tau_i=\mathbf m_i\times\mathbf B_{\mathrm{local}},
 \qquad
 U_i=-\mathbf m_i\cdot\mathbf B_{\mathrm{local}}.
-$$
+```
 
 Since alignment with the magnetic field corresponds to a 
 lower energy, the moments tend to become preferentially 
@@ -793,18 +793,18 @@ The external field can affect microscopic magnetic moments
 through two different mechanisms. Using the equivalent 
 current-loop expression
 
-$$
+```math
 \mathbf m=IA\hat{\mathbf n},
-$$
+```
 
 we can illustrate these mechanisms through
 
-$$
+```math
 d\mathbf m=
 IA\,d\hat{\mathbf n}
 +A\hat{\mathbf n}\,dI
 +I\hat{\mathbf n}\,dA.
-$$
+```
 
 - **Paramagnetic response:** the field changes the statistical 
   orientation or occupation of existing magnetic moments, 
@@ -824,52 +824,52 @@ response.
 
 The resulting macroscopic magnetisation is
 
-$$
+```math
 \boxed{
 \mathbf M=\frac{1}{\Delta V}\sum_i\mathbf m_i
 }.
-$$
+```
 
 This magnetisation gives rise to equivalent bound currents,
 
-$$
+```math
 \mathbf J_b=\nabla\times\mathbf M,
 \qquad
 \mathbf K_b=\mathbf M\times\hat{\mathbf n},
-$$
+```
 
 which produce an additional magnetic field $\mathbf B_m$. 
 By superposition, the resulting magnetic field is
 
-$$
+```math
 \boxed{\mathbf B'=\mathbf B_0+\mathbf B_m}.
-$$
+```
 
 Consider an ideal infinitely long cylinder uniformly 
 magnetised along its axis. Its bound surface current 
 density is $K_b=M$, making it equivalent to an infinitely 
 long solenoid. Hence, inside the cylinder,
 
-$$
+```math
 \mathbf B_m=\mu_0\mathbf M.
-$$
+```
 
 The resulting magnetic field is therefore
 
-$$
+```math
 \begin{aligned}
 \mathbf B'
 &=\mathbf B_0+\mu_0\mathbf M\\
 &=\mu_0\left(\frac{\mathbf B_0}{\mu_0}+\mathbf M\right)\\
 &=\mu_0(\mathbf H+\mathbf M).
 \end{aligned}
-$$
+```
 
 In this particular geometry,
 
-$$
+```math
 \mathbf H=\mathbf H_0=\frac{\mathbf B_0}{\mu_0}.
-$$
+```
 
 The physical interpretation is straightforward: $\mathbf H$ 
 represents the applied magnetic excitation, $\mathbf M$ 
@@ -886,48 +886,48 @@ function of the applied magnetic field, $M=M(B_0)$.
 Assuming a smooth response near zero field, Taylor expansion 
 gives
 
-$$
+```math
 M(B_0)=M(0)
 +\left.\frac{dM}{dB_0}\right|_{B_0=0}B_0
 +\frac12\left.\frac{d^2M}{dB_0^2}\right|_{B_0=0}B_0^2
 +\cdots.
-$$
+```
 
 For a material with no initial magnetisation, $M(0)=0$. 
 If the applied field is sufficiently weak, higher-order 
 terms can be neglected:
 
-$$
+```math
 M(B_0)\simeq
 \left.\frac{dM}{dB_0}\right|_{B_0=0}B_0.
-$$
+```
 
 Using $B_0=\mu_0H$ in the geometry considered above,
 
-$$
+```math
 M\simeq
 \mu_0\left.\frac{dM}{dB_0}\right|_{B_0=0}H.
-$$
+```
 
 This motivates the definition of **magnetic susceptibility**
 
-$$
+```math
 \boxed{
 \chi_m=\left.\frac{dM}{dH}\right|_{H=0}
 }
-$$
+```
 
 which, in this geometry, is equivalently given by
 
-$$
+```math
 \chi_m=\mu_0\left.\frac{dM}{dB_0}\right|_{B_0=0}.
-$$
+```
 
 For a linear, isotropic medium, the vector form becomes
 
-$$
+```math
 \boxed{\mathbf M=\chi_m\mathbf H}.
-$$
+```
 
 The dimensionless susceptibility $\chi_m$ measures the 
 strength and sign of the material's magnetic response, 
@@ -937,9 +937,9 @@ magnetisation mechanisms.
 If both paramagnetic and diamagnetic contributions are 
 present and can be treated additively,
 
-$$
+```math
 \chi_m=\chi_{\mathrm{para}}+\chi_{\mathrm{dia}},
-$$
+```
 
 where $\chi_{\mathrm{para}}>0$ and $\chi_{\mathrm{dia}}<0$.
 
@@ -956,48 +956,48 @@ a tensor rather than a scalar.
 Substituting the linear response into the general relation 
 between $\mathbf B'$, $\mathbf H$ and $\mathbf M$ gives
 
-$$
+```math
 \begin{aligned}
 \mathbf B'
 &=\mu_0(\mathbf H+\mathbf M)\\
 &=\mu_0(\mathbf H+\chi_m\mathbf H)\\
 &=\mu_0(1+\chi_m)\mathbf H.
 \end{aligned}
-$$
+```
 
 Define the **magnetic permeability**
 
-$$
+```math
 \boxed{\mu=\mu_0(1+\chi_m)},
-$$
+```
 
 where $\mu$ has units $\mathrm{H/m}$. The constitutive 
 relation becomes
 
-$$
+```math
 \boxed{\mathbf B'=\mu\mathbf H}.
-$$
+```
 
 The relative permeability is
 
-$$
+```math
 \boxed{\mu_r=\frac{\mu}{\mu_0}=1+\chi_m}.
-$$
+```
 
 Returning to the ideal geometry, where 
 $\mathbf B_0=\mu_0\mathbf H$, we obtain
 
-$$
+```math
 \mathbf B'=(1+\chi_m)\mathbf B_0.
-$$
+```
 
 Hence,
 
-$$
+```math
 \boxed{\chi_m=\frac{B'-B_0}{B_0}},
 \qquad
 \boxed{\mu_r=\frac{B'}{B_0}}.
-$$
+```
 
 In this case, the susceptibility measures the fractional 
 change in the magnetic field due to magnetisation, while 
@@ -1010,16 +1010,16 @@ resulting field to the original applied field.
 For a material of arbitrary geometry, its magnetisation 
 may also produce a demagnetising field $\mathbf H_d$, so
 
-$$
+```math
 \mathbf H=\frac{\mathbf B_0}{\mu_0}+\mathbf H_d.
-$$
+```
 
 Consequently, $\mathbf B_m$ is not generally equal to 
 $\mu_0\mathbf M$. The definition
 
-$$
+```math
 \boxed{\mathbf B'=\mu_0(\mathbf H+\mathbf M)}
-$$
+```
 
 remains valid, but the interpretation of $\mu_r$ as 
 $B'/B_0$ requires negligible demagnetising effects.
@@ -1039,9 +1039,9 @@ by a single constant permeability.
 
 For a simple classical gas of **noninteracting** permanent moments of magnitude $m$ ($\mathrm{A\,m^2}$), the thermal weight is proportional to $e^{mB\cos\theta/(k_BT)}$. In the weak-field limit $mB\ll k_BT$, expanding the exponential and averaging over directions gives
 
-$$
+```math
 \langle m_\parallel\rangle\simeq\frac{m^2B}{3k_BT},\qquad M\simeq\frac{nm^2B}{3k_BT}.
-$$
+```
 
 Here $k_B$ is Boltzmann's constant ($\mathrm{J/K}$), $T$ is absolute temperature (kelvin, $\mathrm K$), and the weak-field moment $mB$ is much smaller than the thermal energy $k_BT$. For weak susceptibility $B\simeq\mu_0H$, hence $\chi_m\simeq\mu_0nm^2/(3k_BT)$: the **classical Curie-law limit**. Quantum spins and interacting moments require other models.
 
@@ -1060,9 +1060,9 @@ magnetic fields obey different boundary conditions.
 
 From Gauss' law for magnetism,
 
-$$
+```math
 \oint_S\mathbf B\cdot d\mathbf S=0.
-$$
+```
 
 Choose a thin Gaussian pillbox across the interface, with 
 its two flat faces of area $A$ parallel to the interface. 
@@ -1071,20 +1071,20 @@ curved side vanishes.
 
 The outward normals of the two faces are opposite, so
 
-$$
+```math
 \begin{aligned}
 \oint_S\mathbf B\cdot d\mathbf S
 &=(\mathbf B_2\cdot\hat{\mathbf n})A
 -(\mathbf B_1\cdot\hat{\mathbf n})A\\
 &=0.
 \end{aligned}
-$$
+```
 
 Therefore,
 
-$$
+```math
 \boxed{\hat{\mathbf n}\cdot(\mathbf B_2-\mathbf B_1)=0}.
-$$
+```
 
 The normal component of $\mathbf B$ is continuous across 
 the interface. Physically, magnetic flux cannot begin or 
@@ -1095,9 +1095,9 @@ in classical electromagnetism.
 
 From Ampère's law in magnetostatics,
 
-$$
+```math
 \oint_C\mathbf H\cdot d\mathbf l=I_{f,\mathrm{enc}}.
-$$
+```
 
 Choose a narrow rectangular loop across the interface, 
 with its two long sides of length $l$ parallel to the 
@@ -1106,36 +1106,36 @@ interface along a tangential unit vector $\hat{\mathbf t}$.
 As the height of the loop approaches zero, the contributions 
 from the two short sides vanish. The remaining line integral is
 
-$$
+```math
 \oint_C\mathbf H\cdot d\mathbf l
 =(\mathbf H_2-\mathbf H_1)\cdot\hat{\mathbf t}\,l.
-$$
+```
 
 If a free surface current $\mathbf K_f$ flows along the 
 interface, the enclosed current is
 
-$$
+```math
 I_{f,\mathrm{enc}}
 =\mathbf K_f\cdot(\hat{\mathbf n}\times\hat{\mathbf t})\,l.
-$$
+```
 
 Here $\hat{\mathbf n}\times\hat{\mathbf t}$ is the oriented 
 normal to the rectangular loop.
 
 Equating both expressions and cancelling $l$ gives
 
-$$
+```math
 (\mathbf H_2-\mathbf H_1)\cdot\hat{\mathbf t}
 =\mathbf K_f\cdot(\hat{\mathbf n}\times\hat{\mathbf t}).
-$$
+```
 
 Since the tangential direction can be chosen arbitrarily, 
 the vector boundary condition is
 
-$$
+```math
 \boxed{\hat{\mathbf n}\times(\mathbf H_2-\mathbf H_1)
 =\mathbf K_f}.
-$$
+```
 
 Only free surface current appears because the magnetisation 
 contribution has already been separated from Ampère's law 
@@ -1145,16 +1145,16 @@ If the boundary condition is instead expressed in terms of
 $\mathbf B$, both free and bound surface currents must be 
 included:
 
-$$
+```math
 \hat{\mathbf n}\times(\mathbf B_2-\mathbf B_1)
 =\mu_0(\mathbf K_f+\mathbf K_b),
-$$
+```
 
 where the net bound surface current at the interface is
 
-$$
+```math
 \mathbf K_b=(\mathbf M_1-\mathbf M_2)\times\hat{\mathbf n}.
-$$
+```
 
 The difference arises because the outward normals of the 
 two materials at their shared boundary are opposite.
@@ -1164,22 +1164,22 @@ two materials at their shared boundary are opposite.
 In the absence of free surface current, the two boundary 
 conditions reduce to
 
-$$
+```math
 \boxed{
 B_{1\perp}=B_{2\perp},
 \qquad
 H_{1\parallel}=H_{2\parallel}.
 }
-$$
+```
 
 For linear, isotropic materials satisfying $\mathbf B=\mu\mathbf H$,
 
-$$
+```math
 \mu_1H_{1\perp}=\mu_2H_{2\perp},
 \qquad
 \frac{B_{1\parallel}}{\mu_1}
 =\frac{B_{2\parallel}}{\mu_2}.
-$$
+```
 
 Thus, although the normal component of $\mathbf B$ is 
 continuous, its tangential component can change when the 
@@ -1188,16 +1188,16 @@ permeability changes.
 If $\theta$ is the angle between $\mathbf B$ and the 
 interface normal, then
 
-$$
+```math
 \tan\theta=\frac{B_\parallel}{B_\perp},
-$$
+```
 
 giving
 
-$$
+```math
 \boxed{\frac{\tan\theta_2}{\tan\theta_1}
 =\frac{\mu_2}{\mu_1}}.
-$$
+```
 
 This explains how the direction of a magnetic field can 
 change across an interface between different magnetic 
@@ -1219,74 +1219,74 @@ a later chapter.
 For a solenoid of $N$ turns, length $l$ and cross-sectional 
 area $A$, the magnetic flux through each turn is
 
-$$
+```math
 \Phi_B=BA.
-$$
+```
 
 Neglecting resistance and other losses, the voltage required 
 to overcome the induced electromotive force is
 
-$$
+```math
 V_{\mathrm{supply}}=NA\frac{dB}{dt}.
-$$
+```
 
 The incremental work supplied is therefore
 
-$$
+```math
 \begin{aligned}
 dW
 &=IV_{\mathrm{supply}}\,dt\\
 &=INA\,dB.
 \end{aligned}
-$$
+```
 
 Using Ampère's law for a long solenoid,
 
-$$
+```math
 H=\frac{NI}{l},
-$$
+```
 
 we obtain
 
-$$
+```math
 dW=HAl\,dB.
-$$
+```
 
 Since $Al$ is the volume occupied by the field, the work 
 supplied per unit volume is
 
-$$
+```math
 du=\frac{dW}{Al}=H\,dB.
-$$
+```
 
 More generally, for reversible quasistatic changes with 
 appropriate material energy bookkeeping,
 
-$$
+```math
 \boxed{du=\mathbf H\cdot d\mathbf B}.
-$$
+```
 
 For a linear, lossless, nondispersive and isotropic medium 
 with constant permeability $\mu$, starting from zero field,
 
-$$
+```math
 \begin{aligned}
 u_B
 &=\int_0^B H(B')\,dB'\\
 &=\int_0^B\frac{B'}{\mu}\,dB'\\
 &=\frac{B^2}{2\mu}.
 \end{aligned}
-$$
+```
 
 Hence,
 
-$$
+```math
 \boxed{
 u_B=\frac12\mathbf B\cdot\mathbf H
 =\frac{B^2}{2\mu}
 =\frac12\mu H^2
 }.
-$$
+```
 
 The factor of $1/2$ appears because the field is gradually 
 established from zero, rather than remaining at its final 
@@ -1294,16 +1294,16 @@ value throughout the process.
 
 In vacuum, $\mu=\mu_0$, giving
 
-$$
+```math
 \boxed{u_B=\frac{B^2}{2\mu_0}}.
-$$
+```
 
 The total magnetic energy is obtained by integrating the 
 energy density over the relevant volume:
 
-$$
+```math
 U_B=\int_V u_B\,dV.
-$$
+```
 
 Note that increasing permeability increases the energy 
 density at fixed $H$, but decreases it at fixed $B$. 
@@ -1319,9 +1319,9 @@ demagnetisation processes follow different paths. The
 energy dissipated per unit volume during a complete 
 cycle is the area enclosed by the $B$-$H$ loop:
 
-$$
+```math
 w_{\mathrm{loss}}=\left|\oint H\,dB\right|.
-$$
+```
 
 Therefore, the simple expression $u_B=\frac12\mathbf B
 \cdot\mathbf H$ should not be applied blindly to permanent 
@@ -1335,11 +1335,11 @@ macroscopic approach: instead of describing every
 microscopic dipole individually, we introduce the net 
 dipole moment per unit volume,
 
-$$
+```math
 \mathbf P=\frac{1}{\Delta V}\sum_i\mathbf p_i,
 \qquad
 \mathbf M=\frac{1}{\Delta V}\sum_i\mathbf m_i.
-$$
+```
 
 However, electric and magnetic dipoles have different 
 microscopic structures.
@@ -1348,25 +1348,25 @@ An electric dipole consists of separated positive and
 negative charges. Neighbouring charges can cancel, leaving 
 an effective bound charge distribution:
 
-$$
+```math
 \boxed{
 \rho_b=-\nabla\cdot\mathbf P,
 \qquad
 \sigma_b=\mathbf P\cdot\hat{\mathbf n}
 }.
-$$
+```
 
 A magnetic dipole can be represented by an equivalent 
 current loop. Neighbouring currents can cancel, leaving 
 an effective bound current distribution:
 
-$$
+```math
 \boxed{
 \mathbf J_b=\nabla\times\mathbf M,
 \qquad
 \mathbf K_b=\mathbf M\times\hat{\mathbf n}
 }.
-$$
+```
 
 This explains the different mathematical structures: 
 the divergence describes the net charge accumulation 
@@ -1377,13 +1377,13 @@ associated with magnetisation.
 Substituting these bound sources into Gauss' law and 
 Ampère's law respectively motivates the auxiliary fields
 
-$$
+```math
 \boxed{
 \mathbf D=\varepsilon_0\mathbf E+\mathbf P,
 \qquad
 \mathbf H=\frac{\mathbf B}{\mu_0}-\mathbf M
 }.
-$$
+```
 
 Both definitions separate the material response from the 
 free sources appearing explicitly in Maxwell's equations.
@@ -1406,11 +1406,11 @@ have been experimentally confirmed.
 
 Consequently,
 
-$$
+```math
 \nabla\cdot\mathbf E=\frac{\rho}{\varepsilon_0},
 \qquad
 \nabla\cdot\mathbf B=0.
-$$
+```
 
 Electric field lines can originate from or terminate at 
 electric charges, whereas magnetic flux has no sources 
@@ -1419,11 +1419,11 @@ or sinks.
 Although effective magnetic charges can sometimes be 
 introduced as a mathematical tool,
 
-$$
+```math
 \rho_m=-\nabla\cdot\mathbf M,
 \qquad
 \sigma_m=\mathbf M\cdot\hat{\mathbf n},
-$$
+```
 
 they describe the contribution of magnetisation to 
 $\mathbf H$, rather than actual magnetic monopoles.

@@ -6,9 +6,9 @@ Coulomb's law tells us how to add the field produced by each charge, but direct 
 
 A surface element $dS$ (square metres, $\mathrm{m^2}$) has an oriented area vector $d\mathbf S=\hat{\mathbf n}\,dS$, where $\hat{\mathbf n}$ is its unit normal and $\theta$ is the angle between $\mathbf E$ and the normal. Only the component of $\mathbf E$ normal to it crosses the surface:
 
-$$
+```math
 d\Phi_E=\mathbf E\cdot d\mathbf S=E\cos\theta\,dS,\qquad \Phi_E=\int_S\mathbf E\cdot d\mathbf S.
-$$
+```
 
 Electric flux $\Phi_E$ has units $\mathrm{N\,m^2/C}$. For a closed surface the normal is defined outward, so outward flux is positive and inward flux negative. Electric flux is a mathematical surface integral; picturing field lines passing through a surface is useful, but the number of lines drawn is arbitrary.
 
@@ -16,9 +16,9 @@ Electric flux $\Phi_E$ has units $\mathrm{N\,m^2/C}$. For a closed surface the n
 
 A small area $dS$ at distance $r$ from a point subtends the *signed solid angle*
 
-$$
+```math
 d\Omega=\frac{\hat{\mathbf r}\cdot d\mathbf S}{r^2}.
-$$
+```
 
 Here $\hat{\mathbf r}$ points from the source to the area patch and $r$ is that distance. It is projected area divided by distance squared. A sphere viewed from its centre covers $4\pi$ steradians ($\mathrm{sr}$; dimensionless in SI). Remarkably, any closed surface enclosing the point subtends the same total signed solid angle $4\pi$: deforming the surface changes projected area and distance in compensating ways. If the point lies outside, positive and negative contributions cancel, giving zero.
 
@@ -26,15 +26,15 @@ Here $\hat{\mathbf r}$ points from the source to the area patch and $r$ is that 
 
 For one charge $q$, Coulomb's field is radial. Its flux through any small surface patch is therefore
 
-$$
+```math
 d\Phi_E=\frac{q}{4\pi\varepsilon_0r^2}\hat{\mathbf r}\cdot d\mathbf S=\frac{q}{4\pi\varepsilon_0}\,d\Omega.
-$$
+```
 
 Integrating over a closed surface gives $q/\varepsilon_0$ if the point charge lies inside and zero if it lies outside. Because flux is linear in the field, superposition extends this result to any charge distribution:
 
-$$
+```math
 \boxed{\oint_{\partial V}\mathbf E\cdot d\mathbf S=\frac{Q_{\rm enc}}{\varepsilon_0}}.
-$$
+```
 
 The surface need not be spherical. Notice also that $Q_{\rm enc}=0$ means *zero net flux*, not necessarily $\mathbf E=0$ at points on that surface.
 
@@ -44,9 +44,9 @@ Gauss's law always constrains flux, but it gives the field immediately only when
 
 A spherically symmetric source has radial field $E(r)$. On a sphere of radius $r$ it is constant, so
 
-$$
+```math
 E(r)(4\pi r^2)=\frac{Q_{\rm enc}(r)}{\varepsilon_0}\quad\Rightarrow\quad\boxed{\mathbf E(r)=\frac{Q_{\rm enc}(r)}{4\pi\varepsilon_0r^2}\hat{\mathbf r}}.
-$$
+```
 
 ![Radial field and outward normal of a Gaussian sphere](../figures/02-gaussian-sphere.svg)
 
@@ -60,15 +60,15 @@ $$
 
 For a uniformly charged solid sphere with total charge $Q$ (coulombs) and radius $R$ (metres), $Q_{\rm enc}(r)=Q(r/R)^3$ for $r<R$:
 
-$$
+```math
 \mathbf E(r)=\begin{cases}\dfrac{Qr}{4\pi\varepsilon_0R^3}\hat{\mathbf r},&r<R,\\[4pt]\dfrac{Q}{4\pi\varepsilon_0r^2}\hat{\mathbf r},&r\ge R.\end{cases}
-$$
+```
 
 An infinite line with linear charge density $\lambda$ ($\mathrm{C/m}$) has cylindrical symmetry. A coaxial cylinder of radius $r$ and length $L$ has no flux through its ends, hence
 
-$$
+```math
 E(2\pi rL)=\frac{\lambda L}{\varepsilon_0}\quad\Rightarrow\quad\boxed{E=\frac{\lambda}{2\pi\varepsilon_0r}}.
-$$
+```
 
 An infinite plane with surface charge density $\sigma$ ($\mathrm{C/m^2}$) has equal-magnitude fields on its two sides. A pillbox of area $A$ encloses $\sigma A$, hence $2EA=\sigma A/\varepsilon_0$ and $|E|=|\sigma|/(2\varepsilon_0)$. These results agree with the direct integrations in Chapter 1 but require less calculation.
 
@@ -76,15 +76,15 @@ An infinite plane with surface charge density $\sigma$ ($\mathrm{C/m^2}$) has eq
 
 Gauss's law is a statement about a whole surface. To convert it into a local law, imagine a small rectangular box. For its two $x$-faces, the net flux is
 
-$$
+```math
 [E_x(x+\Delta x)-E_x(x)]\Delta y\Delta z\simeq\frac{\partial E_x}{\partial x}\Delta V.
-$$
+```
 
 Adding the $y$- and $z$-face pairs gives
 
-$$
+```math
 \Delta\Phi_E\simeq\left(\frac{\partial E_x}{\partial x}+\frac{\partial E_y}{\partial y}+\frac{\partial E_z}{\partial z}\right)\Delta V.
-$$
+```
 
 The expression in parentheses is the **divergence** $\nabla\cdot\mathbf E$: net outward flux per unit volume in the shrinking-box limit. A positive divergence indicates a local field source; a negative divergence indicates net inward flow.
 
@@ -93,34 +93,34 @@ The expression in parentheses is the **divergence** $\nabla\cdot\mathbf E$: net 
 
 By the divergence theorem, $\oint_{\partial V}\mathbf E\cdot d\mathbf S=\int_V\nabla\cdot\mathbf E\,dV$. Since $Q_{\mathrm{enc}}=\int_V\rho\,dV$,
 
-$$
+```math
 \int_V\left(\nabla\cdot\mathbf E-\frac{\rho}{\varepsilon_0}\right)dV=0.
-$$
+```
 
 Here $\rho$ is charge per unit volume ($\mathrm{C/m^3}$). Since the region $V$ is arbitrary, for a sufficiently regular charge density the integrands must agree locally:
 
-$$
+```math
 \boxed{\nabla\cdot\mathbf E=\frac{\rho}{\varepsilon_0}}.
-$$
+```
 
 **What happens at a point charge?** For a point charge $q$ at the origin, Coulomb's law gives
 
-$$
+```math
 \mathbf E=\frac{q}{4\pi\varepsilon_0}\frac{\mathbf r}{r^3}.
-$$
+```
 
 Direct differentiation gives $\nabla\cdot(\mathbf r/r^3)=0$ for $r\neq0$. However, the flux through any sphere centred at the origin is
 
-$$
+```math
 \oint_S\frac{\mathbf r}{r^3}\cdot d\mathbf S
 =\frac{1}{r^2}(4\pi r^2)=4\pi.
-$$
+```
 
 Thus, the divergence is zero everywhere except at the origin, yet its integral over any volume enclosing the origin must equal $4\pi$. This is precisely the property of the three-dimensional Dirac delta, whose integral is $1$ if the origin is enclosed and $0$ otherwise. Hence, in the distributional sense,
 
-$$
+```math
 \boxed{\nabla\cdot\left(\frac{\mathbf r}{r^3}\right)=4\pi\delta^{(3)}(\mathbf r)}.
-$$
+```
 
 The point charge is therefore represented by $\rho=q\delta^{(3)}(\mathbf r)$, keeping the differential form of Gauss's law consistent with its integral form.
 
@@ -132,19 +132,19 @@ Consider a surface carrying charge density $\sigma_s$ ($\mathrm{C/m^2}$), separa
 
 As the pillbox height approaches zero, its side-wall area and hence its flux vanish, leaving only the two faces. Their outward normals point in opposite directions, so Gauss's law gives
 
-$$
+```math
 \oint_S\mathbf E\cdot d\mathbf S
 =(\mathbf E_2\cdot\hat{\mathbf n})A
 -(\mathbf E_1\cdot\hat{\mathbf n})A
 =\frac{\sigma_s A}{\varepsilon_0}.
-$$
+```
 
 Cancelling $A$,
 
-$$
+```math
 \boxed{(\mathbf E_2-\mathbf E_1)\cdot\hat{\mathbf n}
 =\frac{\sigma_s}{\varepsilon_0}}.
-$$
+```
 
 Thus, **surface charge produces a discontinuity in the normal component of the electric field**. If $\sigma_s=0$, this component is continuous.
 
