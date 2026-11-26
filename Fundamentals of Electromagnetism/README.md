@@ -18,19 +18,19 @@ These are **concise explanatory notes**, not a replacement for textbooks. The go
 
 ## Chapters
 
-- **Chapter 1 — Electric Charge and Fields**: [`01-Electric-Charge-and-Fields.md`](chapters/01-Electric-Charge-and-Fields.md)
-- **Chapter 2 — Gauss's Law**: [`02-Gauss-Law.md`](chapters/02-Gauss-Law.md)
-- **Chapter 3 — Electric Potential and Energy**: [`03-Electric-Potential-and-Energy.md`](chapters/03-Electric-Potential-and-Energy.md)
-- **Chapter 4 — Conductors and Capacitance**: [`04-Conductors-and-Capacitance.md`](chapters/04-Conductors-and-Capacitance.md)
-- **Chapter 5 — Dielectrics and Polarisation**: [`05-Dielectrics-and-Polarisation.md`](chapters/05-Dielectrics-and-Polarisation.md)
-- **Chapter 6 — Electric Currents and DC Circuits**: [`06-Electric-Currents-and-DC-Circuits.md`](chapters/06-Electric-Currents-and-DC-Circuits.md)
-- **Chapter 7 — Magnetic Fields and Magnetostatics**: [`07-Magnetic-Fields-and-Magnetostatics.md`](chapters/07-Magnetic-Fields-and-Magnetostatics.md)
-- **Chapter 8 — Magnetisation and Magnetic Materials**: [`08-Magnetisation-and-Magnetic-Materials.md`](chapters/08-Magnetisation-and-Magnetic-Materials.md)
-- **Chapter 9 — Electromagnetic Induction and Inductance**: [`09-Electromagnetic-Induction-and-Inductance.md`](chapters/09-Electromagnetic-Induction-and-Inductance.md)
-- **Chapter 10 — Electromagnetic Oscillations and AC Circuits**: [`10-Electromagnetic-Oscillations-and-AC-Circuits.md`](chapters/10-Electromagnetic-Oscillations-and-AC-Circuits.md)
-- **Chapter 11 — Maxwell's Equations and Conservation Laws**: [`11-Maxwells-Equations-and-Conservation-Laws.md`](chapters/11-Maxwells-Equations-and-Conservation-Laws.md)
-- **Chapter 12 — Electromagnetic Waves**: [`12-Electromagnetic-Waves.md`](chapters/12-Electromagnetic-Waves.md)
-- **Chapter 13 — Electromagnetism and Special Relativity (Optional)**: [`13-Electromagnetism-and-Special-Relativity-Optional.md`](chapters/13-Electromagnetism-and-Special-Relativity-Optional.md)
+- **Chapter 1 — Electric Charge and Fields**: [`01-Electric-Charge-and-Fields.md`](Chapters/01-Electric-Charge-and-Fields.md)
+- **Chapter 2 — Gauss's Law**: [`02-Gauss-Law.md`](Chapters/02-Gauss-Law.md)
+- **Chapter 3 — Electric Potential and Energy**: [`03-Electric-Potential-and-Energy.md`](Chapters/03-Electric-Potential-and-Energy.md)
+- **Chapter 4 — Conductors and Capacitance**: [`04-Conductors-and-Capacitance.md`](Chapters/04-Conductors-and-Capacitance.md)
+- **Chapter 5 — Dielectrics and Polarisation**: [`05-Dielectrics-and-Polarisation.md`](Chapters/05-Dielectrics-and-Polarisation.md)
+- **Chapter 6 — Electric Currents and DC Circuits**: [`06-Electric-Currents-and-DC-Circuits.md`](Chapters/06-Electric-Currents-and-DC-Circuits.md)
+- **Chapter 7 — Magnetic Fields and Magnetostatics**: [`07-Magnetic-Fields-and-Magnetostatics.md`](Chapters/07-Magnetic-Fields-and-Magnetostatics.md)
+- **Chapter 8 — Magnetisation and Magnetic Materials**: [`08-Magnetisation-and-Magnetic-Materials.md`](Chapters/08-Magnetisation-and-Magnetic-Materials.md)
+- **Chapter 9 — Electromagnetic Induction and Inductance**: [`09-Electromagnetic-Induction-and-Inductance.md`](Chapters/09-Electromagnetic-Induction-and-Inductance.md)
+- **Chapter 10 — Electromagnetic Oscillations and AC Circuits**: [`10-Electromagnetic-Oscillations-and-AC-Circuits.md`](Chapters/10-Electromagnetic-Oscillations-and-AC-Circuits.md)
+- **Chapter 11 — Maxwell's Equations and Conservation Laws**: [`11-Maxwells-Equations-and-Conservation-Laws.md`](Chapters/11-Maxwells-Equations-and-Conservation-Laws.md)
+- **Chapter 12 — Electromagnetic Waves**: [`12-Electromagnetic-Waves.md`](Chapters/12-Electromagnetic-Waves.md)
+- **Chapter 13 — Electromagnetism and Special Relativity (Optional)**: [`13-Electromagnetism-and-Special-Relativity-Optional.md`](Chapters/13-Electromagnetism-and-Special-Relativity-Optional.md)
 
 ## Editorial approach
 
@@ -154,4 +154,4 @@ The [`tools/`](tools/) directory contains `generate_core_figures.py` and `genera
 
 Run these scripts from the repository root, after installing their dependencies. The figures are also included as ready-to-use SVG files, so readers do **not** need Python to view the notes.
 
-The [QA report](QA-REPORT.md) describes the checks performed for the prepared edition. Automated validation is useful for catching mistakes but does not establish that every physics argument is correct.
+The QA report (not included in this repository) describes the checks performed for the prepared edition. Automated validation is useful for catching mistakes but does not establish that every physics argument is correct.
