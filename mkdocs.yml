@@ -4,6 +4,9 @@ site_url: https://xcharli3.github.io/Physics-notes/
 repo_url: https://github.com/XCHARLI3/Physics-notes
 repo_name: XCHARLI3/Physics-notes
 docs_dir: "Fundamentals of Electromagnetism"
+# Keep README for GitHub while index.md is the MkDocs homepage.
+exclude_docs: |
+  README.md
 site_dir: site
 use_directory_urls: true
 
