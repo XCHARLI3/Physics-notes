@@ -86,7 +86,7 @@ A uniformly charged disk can be assembled from concentric rings. A ring of radiu
 
 $$E_z=\frac{\sigma z}{2\varepsilon_0}\int_0^R\frac{s\,ds}{(s^2+z^2)^{3/2}}=\boxed{\frac{\sigma}{2\varepsilon_0}\left(1-\frac{z}{\sqrt{R^2+z^2}}\right)}.$$
 
-The $R\to\infty$ limit gives the field of an infinite uniformly charged sheet: $\mathbf E=(\sigma/2\varepsilon_0)\operatorname{sgn}(z)\hat{\mathbf z}$. The two sides point away from a positively charged sheet.
+The $R\to\infty$ limit gives the field of an infinite uniformly charged sheet: $\mathbf E=\frac{\sigma}{2\varepsilon_0}\mathrm{sgn}(z)\hat{\mathbf z}$. The two sides point away from a positively charged sheet.
 
 For a finite uniformly charged rod extending from $-a$ to $a$ on the $x$-axis, where $a$ is half its length, consider the point $(0,z)$ with $z>0$. Horizontal components again cancel:
 
