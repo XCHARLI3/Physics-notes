@@ -8,7 +8,7 @@ A collection of physics and mathematical-methods notes focused on physical intui
 
 **[Read the note online](https://xcharli3.github.io/Physics-notes/)** 
 
-Direct to 13 chapters | [Chapters](Fundamentals%20of%20Electromagnetism/Chapters/) |
+
 
 Anyone can read the website in a browser. No GitHub account or Markdown download is needed.
 
