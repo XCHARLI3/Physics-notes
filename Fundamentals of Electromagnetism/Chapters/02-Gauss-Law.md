@@ -48,10 +48,6 @@ A spherically symmetric source has radial field $E(r)$. On a sphere of radius $r
 E(r)(4\pi r^2)=\frac{Q_{\rm enc}(r)}{\varepsilon_0}\quad\Rightarrow\quad\boxed{\mathbf E(r)=\frac{Q_{\rm enc}(r)}{4\pi\varepsilon_0r^2}\hat{\mathbf r}}.
 ```
 
-![Radial field and outward normal of a Gaussian sphere](../figures/02-gaussian-sphere.svg)
-
-*Figure 2.1.* The shaded sphere is an **imaginary** Gaussian surface, not a material shell. This simplification requires a spherically symmetric source.
-
 
 ![Radial field and outward normal of a Gaussian sphere](../figures/02-gaussian-sphere.svg)
 
