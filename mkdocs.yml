@@ -1,0 +1,69 @@
+site_name: Fundamentals of Electromagnetism
+site_description: Physics notes from electric charge to Maxwell's equations
+site_url: https://xcharli3.github.io/Physics-notes/
+repo_url: https://github.com/XCHARLI3/Physics-notes
+repo_name: XCHARLI3/Physics-notes
+docs_dir: "Fundamentals of Electromagnetism"
+site_dir: site
+use_directory_urls: true
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.path
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+nav:
+  - Home: index.md
+  - Chapters:
+      - "01 · Electric Charge and Fields": Chapters/01-Electric-Charge-and-Fields.md
+      - "02 · Gauss's Law": Chapters/02-Gauss-Law.md
+      - "03 · Electric Potential and Energy": Chapters/03-Electric-Potential-and-Energy.md
+      - "04 · Conductors and Capacitance": Chapters/04-Conductors-and-Capacitance.md
+      - "05 · Dielectrics and Polarisation": Chapters/05-Dielectrics-and-Polarisation.md
+      - "06 · Electric Currents and DC Circuits": Chapters/06-Electric-Currents-and-DC-Circuits.md
+      - "07 · Magnetic Fields and Magnetostatics": Chapters/07-Magnetic-Fields-and-Magnetostatics.md
+      - "08 · Magnetisation and Magnetic Materials": Chapters/08-Magnetisation-and-Magnetic-Materials.md
+      - "09 · Induction and Inductance": Chapters/09-Electromagnetic-Induction-and-Inductance.md
+      - "10 · Oscillations and AC Circuits": Chapters/10-Electromagnetic-Oscillations-and-AC-Circuits.md
+      - "11 · Maxwell's Equations": Chapters/11-Maxwells-Equations-and-Conservation-Laws.md
+      - "12 · Electromagnetic Waves": Chapters/12-Electromagnetic-Waves.md
+      - "13 · Electromagnetism and Special Relativity": Chapters/13-Electromagnetism-and-Special-Relativity-Optional.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+  - toc:
+      permalink: true
+
+extra_css:
+  - https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex.min.css
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/contrib/auto-render.min.js
+  - assets/javascripts/katex.js
