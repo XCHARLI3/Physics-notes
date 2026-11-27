@@ -10,7 +10,7 @@ A collection of physics and mathematical-methods notes focused on physical intui
 
 
 
-### [Green's Functions: From Impulse Response to Convolution](https://xcharli3.github.io/Physics-notes/green-functions/)
+### [From the Harmonic Oscillator to Convolution and Green's Functions](https://xcharli3.github.io/Physics-notes/green-functions/)
 
 **[Read the note online](https://xcharli3.github.io/Physics-notes/green-functions/)**
 

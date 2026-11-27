@@ -1,4 +1,6 @@
-# Green's Functions: From Impulse Response to Convolution
+# From the Harmonic Oscillator to Convolution and Green's Functions
+
+*A physical derivation based on the unit impulse response*
 
 The idea of a Green's function can be developed from the motion of a damped harmonic oscillator. We first consider the response to a single instantaneous impulse, and then use this response to construct the motion under a continuous external force. This gives a physical interpretation of both convolution and the Green's function method.
 
