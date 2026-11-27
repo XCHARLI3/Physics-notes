@@ -1,0 +1,59 @@
+site_name: "Green functions: Harmonic Oscillator to Convolution"
+site_description: From the unit impulse response to convolution and Green's functions
+site_url: https://xcharli3.github.io/Physics-notes/green-functions/
+repo_url: https://github.com/XCHARLI3/Physics-notes
+repo_name: XCHARLI3/Physics-notes
+docs_dir: build/green-functions-docs
+site_dir: site/green-functions
+use_directory_urls: true
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.path
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+nav:
+  - Article: index.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: math
+          class: arithmatex
+          format: !!python/object/apply:pymdownx.arithmatex.arithmatex_fenced_format {kwds: {mode: generic}}
+  - pymdownx.arithmatex:
+      generic: true
+  - toc:
+      permalink: true
+
+extra_css:
+  - https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex.min.css
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/contrib/auto-render.min.js
+  - assets/javascripts/katex.js

@@ -16,4 +16,4 @@ A collection of physics and mathematical-methods notes focused on physical intui
 
 Anyone can read the website in a browser. No GitHub account or Markdown download is needed.
 
-The website is built automatically from these Markdown files using MkDocs and GitHub Pages. The original chapter files remain editable in the repository.
+Each link opens an independent website, with its own navigation and search. Both websites are built automatically from the Markdown files using MkDocs and published through GitHub Pages. The original notes remain editable in the repository.

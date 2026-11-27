@@ -24,10 +24,22 @@ jobs:
           python-version: "3.12"
       - name: Install MkDocs Material
         run: pip install "mkdocs-material>=9,<10"
-      - name: Include impulse response and convolution note
-        run: cp "Green functions - Harmonic Oscillator to Convolution/Green functions - Harmonic Oscillator to Convolution.md" "Fundamentals of Electromagnetism/green-functions.md"
-      - name: Build site
-        run: mkdocs build --strict
+      - name: Build the electromagnetism website
+        run: mkdocs build --strict --config-file mkdocs.yml
+      - name: Prepare the Green functions website
+        run: |
+          mkdir -p build/green-functions-docs/assets/javascripts
+          cp "Green functions - Harmonic Oscillator to Convolution/Green functions - Harmonic Oscillator to Convolution.md" build/green-functions-docs/index.md
+          cp "Fundamentals of Electromagnetism/assets/javascripts/katex.js" build/green-functions-docs/assets/javascripts/katex.js
+      - name: Build the Green functions website
+        run: mkdocs build --strict --config-file mkdocs-green-functions.yml
+      - name: Verify both independent websites
+        run: |
+          test -f site/index.html
+          test -f site/search/search_index.json
+          test -f site/green-functions/index.html
+          test -f site/green-functions/search/search_index.json
+          test -f site/green-functions/assets/javascripts/katex.js
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
