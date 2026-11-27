@@ -502,17 +502,24 @@ Using its sampling property,
 =-\nabla'\left(\frac{\mathbf R}{R^3}\right).
 ```
 
-Using the product rule,
+Let $\mathbf K=\mathbf R/R^3$. Applying the product rule componentwise gives
 
 ```math
 (\mathbf J\cdot\nabla')\mathbf K
-=\nabla'\cdot(\mathbf J\mathbf K)
--\mathbf K(\nabla'\cdot\mathbf J),
-\qquad
-\mathbf K=\frac{\mathbf R}{R^3},
+=\nabla'\cdot(\mathbf K\otimes\mathbf J)
+-\mathbf K(\nabla'\cdot\mathbf J).
 ```
 
-where the divergence of the dyadic product is taken componentwise. Integrating over the source volume and applying the divergence theorem gives
+Here $\otimes$ denotes the **dyadic (outer) product**, a second-order tensor with components $(\mathbf K\otimes\mathbf J)_{ij}=K_iJ_j$. Its divergence is defined by contraction over the second index:
+
+```math
+\big[\nabla'\cdot(\mathbf K\otimes\mathbf J)\big]_i
+=\sum_{j=1}^{3}\frac{\partial(K_iJ_j)}{\partial r'_j}
+=\sum_{j=1}^{3}J_j\frac{\partial K_i}{\partial r'_j}
++K_i\sum_{j=1}^{3}\frac{\partial J_j}{\partial r'_j}.
+```
+
+The first sum is $[(\mathbf J\cdot\nabla')\mathbf K]_i$, while the second is $K_i(\nabla'\cdot\mathbf J)$, which explains the identity without assuming any special current geometry. Integrating over the source volume and applying the divergence theorem gives
 
 ```math
 \begin{aligned}
@@ -566,6 +573,8 @@ Since the last integral is the enclosed current,
 The positive current direction is determined by the right-hand rule relative to the chosen loop orientation.
 
 Like Gauss's law, Ampère's law is general for steady currents, but it simplifies field calculations only when symmetry makes the circulation easy to evaluate.
+
+The vector-calculus machinery in this derivation goes beyond what is normally required in introductory notes; it is included to preserve a **continuous logical connection** from the Biot–Savart law to Ampère's law. A shorter general route introduces the **magnetic vector potential** $\mathbf B=\nabla\times\mathbf A$: in Coulomb gauge, $\nabla\cdot\mathbf A=0$, its Poisson equation $\nabla^2\mathbf A=-\mu_0\mathbf J$ and the curl-of-a-curl identity immediately give $\nabla\times\mathbf B=\mu_0\mathbf J$. The vector potential is introduced in Section 7.8.
 
 ### 7.7.2 Long Solenoid
 
