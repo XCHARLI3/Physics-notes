@@ -343,12 +343,13 @@ The derivatives of $w$ in these integrals refer to the ordinary derivatives of i
 
 ```math
 \begin{aligned}
-m\ddot{x}_p+b\dot{x}_p+kx_p
-&=F(t)+\int_0^t F(\tau)
-\underbrace{\left[m\ddot{w}+b\dot{w}+kw\right]\left(t-\tau\right)}_{=0\text{ for }\tau<t}\,d\tau\\
+m\ddot{x}_p(t)+b\dot{x}_p(t)+kx_p(t)
+&=F(t)+\int_0^t F(\tau)\mathcal{L}w(t-\tau)\,d\tau\\
 &=F(t).
 \end{aligned}
 ```
+
+Here the operator acts on the ordinary positive-time branch of $w$: $\mathcal{L}w(s)=0$ for $s>0$. Since $s=t-\tau>0$ in the interior of the integration interval, the integral vanishes.
 
 Also, $x_p(0)=\dot{x}_p(0)=0$. The convolution therefore solves the original initial-value problem. Notice that the external force $F(t)$ reappears through the boundary term containing $\dot{w}(0^+)$; the rest of the integral consists of homogeneous responses to earlier impulses.
 
