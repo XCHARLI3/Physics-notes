@@ -379,7 +379,9 @@ By the same impulse superposition argument, the response with zero initial condi
 
 $$
 \boxed{x_p(t)=\int_0^t G(t,\tau)F(\tau)\,d\tau.}
-$$
+$
+
+This makes the Green's function method a useful way of finding particular solutions to non-homogeneous linear differential equations.
 
 We can obtain the same result directly from the defining equation. Extending the causal input and response to the real line and using distributional differentiation,
 
