@@ -25,7 +25,7 @@ jobs:
       - name: Install MkDocs Material
         run: pip install "mkdocs-material>=9,<10"
       - name: Include impulse response and convolution note
-        run: cp "Impulse Response and Convolution/Harmonic-Oscillator-to-Green-Functions.md" "Fundamentals of Electromagnetism/green-functions.md"
+        run: cp "Green functions - Harmonic Oscillator to Convolution/Green functions - Harmonic Oscillator to Convolution.md" "Fundamentals of Electromagnetism/green-functions.md"
       - name: Build site
         run: mkdocs build --strict
       - uses: actions/upload-pages-artifact@v3
