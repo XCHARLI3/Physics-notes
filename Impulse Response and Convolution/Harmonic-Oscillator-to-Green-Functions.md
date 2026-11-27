@@ -289,14 +289,14 @@ The integral adds these contributions over the entire history of the applied for
 The convolution of two functions on the real line is defined, when the integral exists, by
 
 $$
-(f*g)(t)=\int_{-\infty}^{\infty}f(\tau)g(t-\tau)\,d\tau.
+(f\ast g)(t)=\int_{-\infty}^{\infty}f(\tau)g(t-\tau)\,d\tau.
 $$
 
 In the present problem, $F(\tau)=0$ for $\tau<0$ and $w(t-\tau)=0$ for $\tau>t$. The first restriction follows from the choice of starting time; the second follows from causality. Therefore, for $t\geq0$,
 
 $$
-(F*w)(t)=\int_0^tF(\tau)w(t-\tau)\,d\tau,
-\qquad \boxed{x=F*w.}
+(F\ast w)(t)=\int_0^tF(\tau)w(t-\tau)\,d\tau,
+\qquad \boxed{x=F\ast w.}
 $$
 
 In this context, convolution is the continuous superposition of shifted impulse responses, each weighted by the impulse delivered at the corresponding time. Substituting the explicit response of the underdamped oscillator gives
@@ -312,14 +312,14 @@ $$
 F(t)=\int_{-\infty}^{\infty}F(\tau)\delta(t-\tau)\,d\tau.
 $$
 
-This identity expresses the force itself as a continuous superposition of instantaneous impulses. In particular, $F*\delta=F$, so the delta distribution is the identity for convolution. Other useful identities, where the convolutions are defined, are
+This identity expresses the force itself as a continuous superposition of instantaneous impulses. In particular, $F\ast \delta=F$, so the delta distribution is the identity for convolution. Other useful identities, where the convolutions are defined, are
 
 $$
-F*w=w*F,\qquad (F_1+F_2)*w=F_1*w+F_2*w,
+F\ast w=w\ast F,\qquad (F_1+F_2)\ast w=F_1\ast w+F_2\ast w,
 $$
 
 $$
-(F*\delta(\cdot-a))(t)=F(t-a).
+(F\ast \delta(\cdot-a))(t)=F(t-a).
 $$
 
 ### 5.1 Verification in the original equation of motion
@@ -477,7 +477,7 @@ $$
 X(s)=\frac{1}{ms^2+bs+k}\widetilde F(s).
 $$
 
-Since $x=F*w$, the convolution theorem gives
+Since $x=F\ast w$, the convolution theorem gives
 
 $$
 X(s)=\widetilde F(s)\widetilde w(s),\qquad
