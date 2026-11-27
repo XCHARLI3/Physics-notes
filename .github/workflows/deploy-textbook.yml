@@ -1,4 +1,4 @@
-name: Deploy Electromagnetism textbook
+name: Deploy Physics Notes
 
 on:
   push:
@@ -24,6 +24,8 @@ jobs:
           python-version: "3.12"
       - name: Install MkDocs Material
         run: pip install "mkdocs-material>=9,<10"
+      - name: Include Green's Functions note
+        run: cp "Green's Functions/Green-Functions.md" "Fundamentals of Electromagnetism/green-functions.md"
       - name: Build site
         run: mkdocs build --strict
       - uses: actions/upload-pages-artifact@v3

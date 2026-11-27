@@ -1,5 +1,5 @@
-site_name: Fundamentals of Electromagnetism
-site_description: Physics notes from electric charge to Maxwell's equations
+site_name: Physics Notes
+site_description: Physics and mathematical-methods notes
 site_url: https://xcharli3.github.io/Physics-notes/
 repo_url: https://github.com/XCHARLI3/Physics-notes
 repo_name: XCHARLI3/Physics-notes
@@ -50,6 +50,8 @@ nav:
       - "11 · Maxwell's Equations": Chapters/11-Maxwells-Equations-and-Conservation-Laws.md
       - "12 · Electromagnetic Waves": Chapters/12-Electromagnetic-Waves.md
       - "13 · Electromagnetism and Special Relativity": Chapters/13-Electromagnetism-and-Special-Relativity-Optional.md
+
+  - Green's Functions: green-functions.md
 
 markdown_extensions:
   - admonition
