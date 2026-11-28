@@ -299,11 +299,11 @@ $$
 Putting the two regions together,
 
 $$
-\boxed{
-\mathbf E(r)=\begin{cases}
-\dfrac{\rho_0r^2}{4\varepsilon_0a}\hat{\mathbf r},&0<r<a,\\[6pt]
-\dfrac{\rho_0a^3}{4\varepsilon_0r^2}\hat{\mathbf r},&r\geq a.
-\end{cases}}
+\boxed{\mathbf E(r)=\dfrac{\rho_0r^2}{4\varepsilon_0a}\hat{\mathbf r},\qquad 0\lt r\lt a}
+$$
+
+$$
+\boxed{\mathbf E(r)=\dfrac{\rho_0a^3}{4\varepsilon_0r^2}\hat{\mathbf r},\qquad r\geq a}
 $$
 
 At the centre, $\mathbf E=0$. For positive $\rho_0$, the field grows as $r^2$ inside and decreases as $1/r^2$ outside. Both expressions give the same value at $r=a$, as expected when there is no additional surface charge.
@@ -431,10 +431,11 @@ $$
 Outside, the enclosed current is the total current $2\pi J_0a^2/3$, giving
 
 $$
-\boxed{\mathbf B(s)=\begin{cases}
-\dfrac{\mu_0J_0s^2}{3a}\hat{\boldsymbol\phi},&0<s<a,\\[6pt]
-\dfrac{\mu_0J_0a^2}{3s}\hat{\boldsymbol\phi},&s\geq a.
-\end{cases}}
+\boxed{\mathbf B(s)=\dfrac{\mu_0J_0s^2}{3a}\hat{\boldsymbol\phi},\qquad 0\lt s\lt a}
+$$
+
+$$
+\boxed{\mathbf B(s)=\dfrac{\mu_0J_0a^2}{3s}\hat{\boldsymbol\phi},\qquad s\geq a}
 $$
 
 At the centre, $\mathbf B=0$. Compare this with the non-uniform sphere. We have done exactly the same kind of calculation: use symmetry, choose a surface or loop, calculate how much source is enclosed, and treat the inside and outside separately.
@@ -648,10 +649,11 @@ $$
 Putting the results together,
 
 $$
-\boxed{\mathbf E(s,t)=\begin{cases}
--\dfrac{s}{2}\dfrac{dB}{dt}\hat{\boldsymbol\phi},&0<s<a,\\[7pt]
--\dfrac{a^2}{2s}\dfrac{dB}{dt}\hat{\boldsymbol\phi},&s\geq a.
-\end{cases}}
+\boxed{\mathbf E(s,t)=-\dfrac{s}{2}\dfrac{dB}{dt}\hat{\boldsymbol\phi},\qquad 0\lt s\lt a}
+$$
+
+$$
+\boxed{\mathbf E(s,t)=-\dfrac{a^2}{2s}\dfrac{dB}{dt}\hat{\boldsymbol\phi},\qquad s\geq a}
 $$
 
 The electric field is zero at the centre and the two expressions agree at $s=a$. If $B$ increases in the positive $z$ direction, $E_\phi$ is negative, which agrees with Lenz's law.
