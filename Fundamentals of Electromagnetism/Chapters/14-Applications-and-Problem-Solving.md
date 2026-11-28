@@ -905,11 +905,21 @@ We started with a local material law and ended up with a single number describin
 
 For several coupled coils, the same idea can be written as a matrix:
 
-$$
-\begin{pmatrix}\lambda_1\\\lambda_2\end{pmatrix}
-=\begin{pmatrix}L_1&M_{12}\\M_{21}&L_2\end{pmatrix}
-\begin{pmatrix}I_1\\I_2\end{pmatrix}.
-$$
+```math
+\begin{pmatrix}
+\lambda_1 \\
+\lambda_2
+\end{pmatrix}
+=
+\begin{pmatrix}
+L_1 & M_{12} \\
+M_{21} & L_2
+\end{pmatrix}
+\begin{pmatrix}
+I_1 \\
+I_2
+\end{pmatrix}.
+```
 
 The diagonal terms describe the response to a coil's own current; the off-diagonal terms describe its coupling to the other coil. In a linear reciprocal magnetic system, $M_{12}=M_{21}$. More generally, the differential response can be written as $L_{ij}=\partial\lambda_i/\partial I_j$. Thinking this way makes the relationship between self-inductance and mutual inductance quite natural.
 
