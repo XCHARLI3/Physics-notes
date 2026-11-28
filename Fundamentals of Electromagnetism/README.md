@@ -23,6 +23,7 @@ The website provides chapter navigation, search, mathematical formula rendering,
 11. [Maxwell's Equations and Conservation Laws](Chapters/11-Maxwells-Equations-and-Conservation-Laws.md)
 12. [Electromagnetic Waves](Chapters/12-Electromagnetic-Waves.md)
 13. [Electromagnetism and Special Relativity (Optional)](Chapters/13-Electromagnetism-and-Special-Relativity-Optional.md)
+14. [Applications and Problem-Solving in Electromagnetism](Chapters/14-Applications-and-Problem-Solving.md)
 
 ## Further information
 
