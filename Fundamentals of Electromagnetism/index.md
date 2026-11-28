@@ -31,6 +31,7 @@ These are **concise explanatory notes**, not a replacement for textbooks. The go
 - **Chapter 11 — Maxwell's Equations and Conservation Laws**: [`11-Maxwells-Equations-and-Conservation-Laws.md`](Chapters/11-Maxwells-Equations-and-Conservation-Laws.md)
 - **Chapter 12 — Electromagnetic Waves**: [`12-Electromagnetic-Waves.md`](Chapters/12-Electromagnetic-Waves.md)
 - **Chapter 13 — Electromagnetism and Special Relativity (Optional)**: [`13-Electromagnetism-and-Special-Relativity-Optional.md`](Chapters/13-Electromagnetism-and-Special-Relativity-Optional.md)
+- **Chapter 14 — Applications and Problem-Solving in Electromagnetism**: [`14-Applications-and-Problem-Solving.md`](Chapters/14-Applications-and-Problem-Solving.md)
 
 ## Editorial approach
 
